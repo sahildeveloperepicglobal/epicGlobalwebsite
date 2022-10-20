@@ -1,0 +1,486 @@
+.mydivs:before {
+  content:"";
+  position: absolute;
+  background-color: red;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 66%;
+  height: 40px;
+}
+.mydivs:after {
+  content: "";
+  position: absolute;
+  top: 655px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: red;
+  width: 50%;
+  height: 30px;
+}
+.topheader {
+  height: 40px;
+}
+.section3ExpandSocial h1 {
+  position: relative;
+  bottom: 96px;
+  width: 835px;
+}
+.section3Expand h1 {
+  position: relative;
+  bottom: 50px;
+}
+.EpicHader {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #65323273;
+  width: 80%;
+  margin-left: 7%;
+  margin-top: -12px;
+  z-index: 9;
+  cursor: pointer;
+  }
+  .EpicHader h1{
+    display: flex;
+    align-items: center;
+  }
+  .mydiv1 ul {
+    display: flex;
+    margin: 28px 0 32px 0px;
+  }
+  .mydiv1 ul li {
+    list-style: none;
+      margin-left: 40px;
+      font-style: inherit;
+      font-weight: 600;
+  }
+ .phoneNumber{
+margin-left: 80%;
+ }
+ .emailData{
+  margin-left: 100%;
+  margin-top: -45px;
+ }
+ .topheader .col-md-8 {
+  background-color: rgb(149, 33, 33);
+ }
+ .topcontact ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5px;
+ }
+ .topcontact ul li {
+  list-style: none;
+  font-weight: 600;
+ }
+ .image12{
+  width: 100% !important;
+ }
+
+ .marketing{
+  margin-top: 45px;
+ }
+.Imgcontainerr2  {
+  width: 690px;
+  margin-top: 66px;
+  margin-left: 154px;
+}
+.section2{
+  position: relative;
+}
+.mydivs {
+  background-image: url("/epic global/thisisengineering-raeng-yhCHx8Mc-Kc-unsplash.jpg");
+  padding-bottom: 615px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 0px;
+}
+.section2content {
+  margin-top: 160px;
+}
+.section2content h2{
+  color: red;
+  font-size: 35px;
+  padding-left: 41px
+}
+.section2content p{
+  color: darkgray;
+  font-size: 20px;
+  padding-left: 41px;
+  font-family: Segoe UI,Regular;
+}
+.bannerheading h1 {
+    text-align: center;
+    color: #fff !important;
+}
+.bannerheading h1 strong {
+  color: red;
+}
+.bannerheading {
+  margin: 0 auto;
+  display: block;
+  padding-top: 72px;
+  font-size: 61px;
+  color: red;
+  
+}
+.section2DigitalMarketing h2{
+  color: red;
+  font-size: xx-large;
+  font-family: Arial, Bold;
+  margin-bottom: 0;
+  text-align: center;
+    
+
+}
+.section2DigitalMarketing p{
+  color: darkgray;
+  margin: 0 auto;
+  display: block;
+  width: 690px;
+  text-align: center;
+}
+.logos {
+  align-items: center;
+   margin-top: 26px;
+   margin-right: 75px;
+}
+
+.MarkitingImage ul {
+  display: flex;
+}
+.Section3Containerr{
+  margin-left: 64%;
+  transform: rotate(-90deg);
+  margin-top: 170px;
+  font-size: xx-large;
+  text-align: center;
+}
+.image1 {
+  margin: 0 auto;
+  display: block;
+  margin-left: 3%;
+  margin-top: 19%;
+
+}
+.socilrotate {
+  transform: rotate(270deg);
+  font-size: xxx-large;
+  text-align: center;
+  
+  
+}
+
+
+.socilrotate span{
+  color:red
+}
+.socialcontent p{
+  color: darkgray;
+  margin: 0 auto;
+  display: block;
+  width: 90%;
+  font-size: xx-large;
+  padding-top: 52px;
+  font-family: Segoe UI,Regular;
+
+ 
+}
+.socialcontent{
+   span{
+  .searchbar{
+    width: 76%;
+    border: 2px solid gray;
+    border-radius: 40px 0px 0px 40px;
+    margin-left: 5%;
+    margin-top: 11%;
+    height: 62px;
+    padding-left: 30px;
+    border-right: none;
+}
+}
+}
+
+
+
+  .searchbarButton{
+    width: 157px;
+    height: 62px;
+    background-color: red;
+    color: white;
+    border-radius: 0px 40px 40px 0px;
+    border: none;
+    font-weight: 700;
+  }
+.mainImageDiv{
+  background-image: url("/epic global/stripe-spilt-red-paint-grunge-abstract-background-raster-illustration-85846247.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 340px;
+  margin-top: 70px;
+}
+.mainImageDivHeadingDiv h1{
+  text-align: center;
+  font-size: xxx-large;
+  padding-top: 129px;
+  color: antiquewhite;
+  
+}
+
+.StartupBusinesscontent p{
+  width: 86%;
+    padding-left: 41px;
+    font-size: x-large;
+    color: darkgray;
+}
+.StartupBusinesscontent h1{
+  font-size: xx-large;
+  color: red;
+  width: 59%;
+  padding-left: 38px;
+
+}
+.StartupBusinesscontent{
+  margin-top: 150px;
+}
+.EmployeeImageSection2 ul {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -64px;
+
+}
+.EmployeeImageSection2 ul li {
+  list-style: none;
+}
+.EmployeeImageSection34 ul{
+  display: flex;
+  justify-content: space-around;
+  // margin-top: -64px;
+}
+.EmployeeImageSection34 ul li{
+  list-style: none;
+}
+.image1s:before {
+  content: "";
+  position: absolute;
+  top: -43px;
+  bottom: 0;
+  right: 0px;
+  left: -50px;
+  width: 100%;
+  height: 100%;
+  background-color: #C5C5C5;
+  padding: 45px;
+  border-radius: 215px;
+}
+.image1s {
+  position: relative;
+  margin-left: 24px;
+}
+.EmployeeImageSection2 h2 {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.EmployeeImageSection34 ul{
+  display: flex;
+  justify-content: space-around;
+  
+  padding-top: 63px;
+
+}
+.EmployeeImageSection34 h2{
+  padding-top: 40px;
+  text-align: center;
+}
+.image1se:before {
+  content: "";
+  position: absolute;
+  top: -45px;
+  bottom: 0;
+  right: 0px;
+  left: -48px;
+  width: 80%;
+  height: 100%;
+  background-color: #C5C5C4;
+  padding: 44px;
+  border-radius: 213px;
+}
+.image1se {
+  position: relative;
+  margin-left: 9px;
+}
+.WorkingProcessContant h1{
+  font-size: xxx-large;
+  margin-top: 120px;
+  text-align: center;
+}
+.WorkingProcessContant p{
+  font-size: x-large;
+  font-weight: 500;
+  margin: 0 auto;
+  display: block;
+  width: 942px;
+}
+.WorkingProcessContant ul {
+  text-align: center;
+  margin-top: 6%;
+}
+.WorkingProcessContant ul li {
+  list-style: none;
+}
+.BeauticianSectionImage{
+  margin-top: 160px;
+}
+
+
+.BeauticianSectionImage h2{
+  color: red;
+  font-size: 35px;
+}
+
+.BeauticianSectionImage p{
+  color: darkgray;
+  font-size: 20px;
+}
+.hadingBussinessSection{
+  text-align: center;
+  margin-left: 21%;
+  font-size: xx-large;
+  padding: 18px;
+  color: red;
+  width: 62%;
+}
+.BeauticianSection h2{
+  font-size: 53px;
+  color: #0a0a0a;
+  margin: 0 0 14px 0;
+}
+.BeauticianSection p{
+  color: #707070;
+  width: 72%;
+  font-size: 27px;
+  margin-top: 0;
+  font-weight: 400;
+  line-height: 33px;
+}
+.BeauticianSection {
+  padding: 50px;
+}
+.BeauticianSectionImages {
+  // margin-right: 40px;
+  // width: 0px;
+}
+.BeauticianSection button {
+  background-color: red;
+  padding: 19px 60px;
+  border-radius: 45px;
+  color: #fff;
+  border-color: red;
+  font-size: 26px;
+  font-weight: 500;
+}
+.DifferentSectionHeading{
+  text-align: center;
+  margin-left: 21%;
+  font-size: xx-large;
+  padding: 18px;
+  color: red;
+  width: 58%;
+}
+.IndustryExpertsSection2 ul{
+     border-radius: 40px;
+}
+
+
+.ggufi {
+ 
+  position: relative;
+    top: 125px;
+    left: 240px;
+    color: white;
+    z-index: 99;
+}
+.ggufi p {
+  
+  width: 235px;
+}
+.industryimage img {
+  border-radius: 195px;
+
+}
+.industryimage:before {
+      content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -308px;
+    right: 0;
+    background-color: red;
+    width: 400px;
+    height: 400px;
+    opacity: 0.5;
+    border-radius: 580px;
+    z-index: 9;
+}
+.industryimage:after {
+  content: "";
+  background-image: url("/epic global/shape-1.png");
+  position: absolute;
+  top: -37px;
+  bottom: 0;
+  left: -49px;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 580px;
+  z-index: 0;
+}
+.industryimage {
+  position: relative;
+}
+.ButtonIndustryExperts ul button {
+  border: #e1ebeb;
+ 
+  width: 278px;
+  height: 50px;
+  margin: 10px;
+  font-weight: 600;
+  background-color: #E7E7E7;
+  font-size: medium;
+  border-radius: 40px 0px 0px 40px;
+}
+.ButtonIndustryExperts li{
+  list-style: none;
+}
+.industry{
+  position: relative;
+}
+.industry:after {
+  content: "";
+  background-image: url("/epic global/shape-2.png");
+  position: absolute;
+  top: 70%;
+  bottom: 0;
+  left: 60%;
+  width: 100px;
+  height: 100px;
+  border-radius: 580px;
+  z-index: 0;
+  right: 0;
+}
+.ButtonIndustryExperts ul li button:hover {
+  background-color: red;
+  color: #fff;
+  transition: all 0.5s ease;
+  
+}
+.ButtonIndustryExperts ul li.active button {
+  background-color: red;
+  color: #fff;
+}
