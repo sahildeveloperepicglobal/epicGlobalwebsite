@@ -278,8 +278,8 @@ const Home: NextPage = () => {
                   <li>
                     <Image
                       src="/epic global/Group 50.png"
-                      height={600}
-                      width={1000}
+                      height={800}
+                      width={1200}
                     />
                   </li>
                 </ul>
@@ -364,36 +364,60 @@ const Home: NextPage = () => {
                         setSrc("/epic global/news-8-550x500.jpg")
                       }
                     >
-                      {" "}
-                      Industry Experts
+                      <Image
+                        src="/epic global/arrow-left-s-line.png"
+                        height={20}
+                        width={20}
+                      />
+                      <span>Industry Experts</span>
                     </button>
                   </li>
                   <li>
                     <button
                       onMouseOver={() => setSrc("/epic global/choose-2.jpg")}
                     >
-                      Dedicated Team
+                      <Image
+                        src="/epic global/arrow-left-s-line.png"
+                        height={20}
+                        width={20}
+                      />
+                      <span>Dedicated Team</span>
                     </button>
                   </li>
                   <li>
                     <button
                       onMouseOver={() => setSrc("/epic global/choose-3.jpg")}
                     >
-                      Outcome Focused
+                      <Image
+                        src="/epic global/arrow-left-s-line.png"
+                        height={20}
+                        width={20}
+                      />
+                      <span>Outcome Focused</span>
                     </button>
                   </li>
                   <li>
                     <button
                       onMouseOver={() => setSrc("/epic global/choose-4.jpg")}
                     >
-                      High Quality Service
+                      <Image
+                        src="/epic global/arrow-left-s-line.png"
+                        height={20}
+                        width={20}
+                      />
+                      <span>High Quality Service</span>
                     </button>
                   </li>
                   <li>
                     <button
                       onMouseOver={() => setSrc("/epic global/choose-5.jpg")}
                     >
-                      Cyber Security Expert
+                      <Image
+                        src="/epic global/arrow-left-s-line.png"
+                        height={20}
+                        width={20}
+                      />
+                      <span>Cyber Security Expert</span>
                     </button>
                   </li>
                 </ul>

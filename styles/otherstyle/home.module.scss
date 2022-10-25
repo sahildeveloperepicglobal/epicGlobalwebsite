@@ -25,12 +25,12 @@
 }
 .section3ExpandSocial h1 {
   position: relative;
-  bottom: 96px;
+  bottom: 9px;
   width: 835px;
 }
 .section3Expand h1 {
   position: relative;
-  bottom: 50px;
+  bottom: 8px;
 }
 .EpicHader {
   display: flex;
@@ -84,7 +84,7 @@ margin-left: 80%;
   margin-top: 45px;
  }
 .Imgcontainerr2  {
-  width: 690px;
+  width: 605px;
   margin-top: 66px;
   margin-left: 154px;
 }
@@ -98,9 +98,11 @@ margin-left: 80%;
     background-size: cover;
     background-position: center;
     height: 0px;
+    
 }
 .section2content {
   margin-top: 160px;
+  width: 749px;
 }
 .section2content h2{
   color: red;
@@ -146,8 +148,8 @@ margin-left: 80%;
 }
 .logos {
   align-items: center;
-   margin-top: 26px;
-   margin-right: 75px;
+  margin-top: 18px;
+  margin-right: 78px;
 }
 
 .MarkitingImage ul {
@@ -183,10 +185,11 @@ margin-left: 80%;
   color: darkgray;
   margin: 0 auto;
   display: block;
-  width: 90%;
-  font-size: xx-large;
+  width: 70%;
+  font-size: x-large;
   padding-top: 52px;
-  font-family: Segoe UI,Regular;
+  margin-right: 209px;
+  font-family: Segoe UI, Regular;
 
  
 }
@@ -313,7 +316,7 @@ margin-left: 80%;
 }
 .image1se {
   position: relative;
-  margin-left: 9px;
+  margin-left: 12px;
 }
 .WorkingProcessContant h1{
   font-size: xxx-large;
@@ -330,6 +333,7 @@ margin-left: 80%;
 .WorkingProcessContant ul {
   text-align: center;
   margin-top: 6%;
+  margin-left: 168px;
 }
 .WorkingProcessContant ul li {
   list-style: none;
@@ -364,12 +368,13 @@ margin-left: 80%;
 .BeauticianSection p{
   color: #707070;
   width: 72%;
-  font-size: 27px;
+  font-size: x-large;
   margin-top: 0;
   font-weight: 400;
   line-height: 33px;
 }
 .BeauticianSection {
+  margin-left: -5px;
   padding: 50px;
 }
 .BeauticianSectionImages {
@@ -446,7 +451,9 @@ margin-left: 80%;
 }
 .ButtonIndustryExperts ul button {
   border: #e1ebeb;
- 
+  display: flex;
+  align-items: center;
+  gap: 50px;
   width: 278px;
   height: 50px;
   margin: 10px;
@@ -483,4 +490,17 @@ margin-left: 80%;
 .ButtonIndustryExperts ul li.active button {
   background-color: red;
   color: #fff;
+}
+// .phoneIconImage{
+//   position: relative;
+//     left: 32px;
+// }
+.topcontact li{
+  display: flex;
+    align-items: center;
+}
+.ButtonIndustryExperts button{
+  position: relative;
+  left: 2px;
+
 }

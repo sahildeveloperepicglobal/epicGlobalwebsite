@@ -55,10 +55,49 @@ const NewFooter: NextPage = () => {
 
         <div>
           <div className={styles.MarktingFooter}>
-            <h3>Icons</h3>
+            <ul>
+              <li>
+                <Image
+                  src="/epic global/facebook-image.png"
+                  height={30}
+                  width={30}
+                />
+              </li>
+
+              <li>
+                <Image
+                  src="/epic global/twitter-image.png"
+                  height={30}
+                  width={30}
+                />
+              </li>
+
+              <li>
+                <Image
+                  src="/epic global/instagram-image.png"
+                  height={30}
+                  width={30}
+                />
+              </li>
+
+              <li>
+                <Image
+                  src="/epic global/google-image1.png"
+                  height={30}
+                  width={30}
+                />
+              </li>
+
+              <li>
+                <Image
+                  src="/epic global/linkedin-image.png"
+                  height={30}
+                  width={30}
+                />
+              </li>
+            </ul>
           </div>
         </div>
-
         <div>
           <div className={styles.lastfooter}>
             <h5>Copyright@ 2022 Epicglobal All Right Reserved</h5>

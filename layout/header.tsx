@@ -43,6 +43,13 @@ const Header = () => {
               </div>
             </div>
             <div className={styles.bannerheading}>
+              <span>
+                <Image
+                  src="/epic global/Group 62 (1).png"
+                  height={20}
+                  width={20}
+                />
+              </span>
               <h1>
                 WE ARE{" "}
                 <strong

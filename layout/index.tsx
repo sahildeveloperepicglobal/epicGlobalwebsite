@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from "./footer";
 import Header from "./header";
+import Image from "next/image";
 import styles from "styles/otherstyle/home.module.scss";
 const GlobalLayout = ({ children }: React.PropsWithChildren<{}>) => {
   return (
@@ -14,8 +15,23 @@ const GlobalLayout = ({ children }: React.PropsWithChildren<{}>) => {
             <div className="col-md-4">
               <div className={styles.topcontact}>
                 <ul>
-                  <li>+911204176500</li>
-                  <li>info@epicglobal.com</li>
+                  <li>
+                    <Image
+                      src="/epic global/phone-image.png"
+                      height={20}
+                      width={20}
+                    />
+
+                    <span>+911204176500</span>
+                  </li>
+                  <li>
+                    <Image
+                      src="/epic global/email-image.png"
+                      height={20}
+                      width={20}
+                    />
+                    <span>info@epicglobal.com</span>
+                  </li>
                 </ul>
               </div>
             </div>
