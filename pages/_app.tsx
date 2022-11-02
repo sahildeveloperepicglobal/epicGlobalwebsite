@@ -4,9 +4,11 @@ import GlobalLayout from "layout";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <GlobalLayout>
-      <Component {...pageProps} />
-    </GlobalLayout>
+    <div>
+      <GlobalLayout>
+        <Component {...pageProps} />
+      </GlobalLayout>
+    </div>
   );
 }
 

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 html,
 body {
   padding: 0;
@@ -8,6 +9,9 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+p{
+  font-family: 'Roboto', sans-serif !important;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -129,4 +133,65 @@ a {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+}
+
+
+@media (max-width:1250px) {
+  .col-md-6 {
+    flex: 100% !important;
+      max-width: 100% !important;
+   }
+}
+
+
+.splide__arrows.splide__arrows--ltr {
+  max-width: 609px !important;
+  position: relative;
+  margin: 0 auto;
+  top: 117%;
+  opacity: -1;
+  z-index: 9999;
+}
+
+.splide__arrows.splide__arrows--ltr button.splide__arrow {
+  WIDTH: 4REM;
+  height: 4rem;
+  top: -1rem;
+ 
+}
+.splide__slide p {
+  position: absolute;
+  bottom: -20px!important;
+}
+
+.splide__slide h2 {
+  display: none;
+  position: absolute;
+}
+
+.splide__slide p {
+  display: none;
+  position: absolute;
+}
+
+
+.splide__slide.is-active p {
+  display: block !important;
+}
+
+.splide__slide.is-active h2 {
+  display: block !important;
+}
+li#splide01-slide04 {
+  margin-right: 1rem;
+  width: calc(((68% + 1rem) / 3) - 1rem) !important;
+}
+
+li#splide01-slide05 {
+  margin-right: 1rem;
+  width: calc(((91% + 1rem) / 3) - 1rem) !important;
+}
+li#splide01-slide02 {
+  margin-right: 1rem;
+  width: calc(((91% + 1rem) / 3) - 1rem) !important;
 }

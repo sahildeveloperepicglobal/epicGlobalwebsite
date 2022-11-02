@@ -29,6 +29,8 @@
     font-size: x-large;
     font-family: inherit;
 }
+
+
 .footer1 ul li {
     list-style: none;
     line-height: 28px;
@@ -47,7 +49,7 @@
     padding-bottom: 25px;
 }
 .mainfooter .footer1 {
-    margin-left: 62px;
+    margin-left: 53px;
     border-right: solid 2px;
     padding-right: 60px;
 }
@@ -56,9 +58,22 @@
 }
 .MarktingFooter ul{
     display: flex;
-    align-items: center;
-    position: relative;
-    left: 627px;
     gap: 20px;
-    list-style: none;
+   justify-content: center;
+   text-align: center;
 }
+@media screen and (max-width:768px){
+    
+    .Container{
+       
+        width: 1884px;
+    }
+    }
+
+    .MarktingFooter ul li {
+        border: 1px solid red;
+    padding: 10px 12px;
+    background: red;
+    border-radius: 50px;
+    list-style: none;
+    }

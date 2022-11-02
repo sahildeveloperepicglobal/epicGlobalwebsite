@@ -58,15 +58,7 @@ const NewFooter: NextPage = () => {
             <ul>
               <li>
                 <Image
-                  src="/epic global/facebook-image.png"
-                  height={30}
-                  width={30}
-                />
-              </li>
-
-              <li>
-                <Image
-                  src="/epic global/twitter-image.png"
+                  src="/epic global/facebook-app-symbol.png"
                   height={30}
                   width={30}
                 />
@@ -81,6 +73,10 @@ const NewFooter: NextPage = () => {
               </li>
 
               <li>
+                <Image src="/epic global/twitter.png" height={30} width={30} />
+              </li>
+
+              <li>
                 <Image
                   src="/epic global/google-image1.png"
                   height={30}
@@ -89,11 +85,7 @@ const NewFooter: NextPage = () => {
               </li>
 
               <li>
-                <Image
-                  src="/epic global/linkedin-image.png"
-                  height={30}
-                  width={30}
-                />
+                <Image src="/epic global/linkedin.png" height={30} width={30} />
               </li>
             </ul>
           </div>

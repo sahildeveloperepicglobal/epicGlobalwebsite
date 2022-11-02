@@ -17,7 +17,7 @@ const GlobalLayout = ({ children }: React.PropsWithChildren<{}>) => {
                 <ul>
                   <li>
                     <Image
-                      src="/epic global/phone-image.png"
+                      src="/epic global/phone.png"
                       height={20}
                       width={20}
                     />
@@ -26,7 +26,7 @@ const GlobalLayout = ({ children }: React.PropsWithChildren<{}>) => {
                   </li>
                   <li>
                     <Image
-                      src="/epic global/email-image.png"
+                      src="/epic global/email.png"
                       height={20}
                       width={20}
                     />
