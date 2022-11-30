@@ -8,6 +8,7 @@
 }
 .rightsideheader ul li {
   list-style: none;
+  margin-left: 8px;
 }
 .mainlogo img {
   width: 240px;
@@ -41,12 +42,23 @@
 .mainmenu ul li {
   margin-left: 30px;
 }
+.mainmenu ul li:nth-child(7) {
+  width: 25px;
+    margin-top: -5px;
+}
 .mainheader .productSpec {
   max-width: 1360px;
   border: 1px solid #000;
   padding: 20px 25px 20px 25px;
   background-color: #fff;
 } 
+.section2 .productSpec {
+  background-color: red;
+  padding-bottom: 40px;
+}
+.section2 .productSpecs {
+  max-width: 100%;
+}
 .mainmenu ul li a {
   font-size: 17px;
   font-weight: 700;
@@ -81,4 +93,290 @@
 }
 .mainbanner h1 strong {
   color: red;
+}
+.section3 .productSpecs {
+  max-width: 1580px;
+}
+.whowearesection {
+  padding-top: 100px;
+  position: relative;
+  left: 50px;
+}
+.whowearesection h2 {
+  font-size: 40px;
+  color: red;
+  padding-bottom: 12px;
+}
+.whowearesection p {
+  font-size: 20px;
+  color: #707070;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+.section3image {
+  display: flex;
+  justify-content: flex-end;
+}
+.section3 .productSpec {
+  padding-left: 0;
+  padding-right: 0;
+}
+.digitalmarketing h2 {
+  text-align: center;
+    font-size: 40px;
+    color: red;
+}
+.digitalmarketing p {
+  text-align: center;
+  font-size: 20px;
+  color: #707070;
+  line-height: 30px;
+  padding-top: 10px;
+}
+.section4 {
+  padding: 80px 0px 0px 0px;
+}
+.businesssection p {
+  font-size: 35px;
+    color: #707070;
+    line-height: 47px;
+}
+.businesssection form input {
+  border: 1px solid #707070;
+  padding: 26px 300px 26px 35px;
+  border-radius: 40px 0px 0px 40px;
+  border-right: none;
+}
+.businesssection form button {
+  border: 1px solid red;
+  padding: 18px 55px 24px;
+  border-radius: 0px 40px 40px 0px;
+  font-size: 22px;
+  font-weight: 500;
+  background-color: red;
+  color: #fff;
+  text-transform: capitalize;
+}
+.businesssection form input::placeholder {
+  font-size: 20px;
+  color: #707070;
+}
+.growingbusinesssection .productSpecs {
+  max-width: 1250px;
+}
+.growingbusinesssection {
+  padding-top: 70px;
+}
+.businesssection form {
+  padding-top: 50px;
+}
+.businesssection1 {
+  transform: rotate(270deg);
+  font-size: 62px;
+  position: relative;
+  top: 50px;
+  right: -10px;
+  text-align: center;
+  font-weight: 600;
+  width: 510px;
+}
+.businesssection1 p span {
+  color: red;
+}
+p.businesspara1 {
+  font-size: 60px;
+  width: 874px;
+  position: relative;
+  right: 110px;
+} 
+.emailsection {
+ background-image: url(../../public/epic_global/12.png);
+ background-position: center;
+ background-size: cover;
+ height: 350px;
+ background-repeat: no-repeat;
+ padding: 120px;
+ margin-top: 140px;
+}
+.emailsection h2 {
+  font-size: 57px;
+  color: #fff;
+  padding-left: 40px;
+}
+.whowework1 h2 {
+  font-size: 40px;
+  color: red;
+  padding-bottom: 20px;
+}
+.whowework1 p {
+  font-size: 20px;
+    color: #707070;
+    margin-bottom: 30px;
+    line-height: 28px;
+}
+.startupsection ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.startupsection ul li img {
+  width: 180px;
+}
+.startupsection ul li {
+  border: 1px solid #E7E7E7;
+  padding: 40px 45px;
+  border-radius: 190px;
+  margin-top: 14px;
+  background-color: #E7E7E7
+}
+.whowework1 {
+  padding-top: 180px;
+}
+.productspe {
+  max-width: 1500px;
+}
+.box1 h3 {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 25px;
+}
+.startupsection {
+  padding-top: 50px;
+}
+.workingsection1 h2 {
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 25px;
+}
+.workingsection1 p {
+  font-size: 28px;
+  font-weight: 600;
+  margin-left: -27px;
+}
+.workingsection {
+  padding-top: 40px;
+}
+.workingsection2 img {
+  width: 1000px;
+  padding-top: 30px;
+}
+.betterinformationsection h2 {
+  text-align: center;
+    font-size: 56px;
+    color: red;
+}
+.betterinformationsection {
+  padding: 60px 0 0 0;
+}
+.beauticianslider1 h2 {
+  font-size: 59px;
+}
+.beauticianslider1 p {
+  font-size: 29px;
+  color: #707070;
+  line-height: 38px;
+  padding-top: 20px;
+}
+.beauticianslider1 button {
+  background-color: red;
+  padding: 24px 50px 24px 50px;
+  border-radius: 130px;
+  font-size: 25px;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.beauticianslider1 button:hover {
+  background-color: #fff;
+  color: red;
+  border: 1px solid red;
+  transition: all 0.4s ease;
+}
+.beauticianslider1 {
+  padding-top: 100px;
+}
+.lastsection1 ul {
+  display: flex;
+}
+.lastsection1 ul li:nth-child(1) {
+  padding: 190px 45px 60px 54px;
+  border-radius: 260px;
+  width: 1180px;
+  background-color: #FE0803;
+  height: 466px;
+  z-index: 99;
+  opacity: 0.5;
+}
+.lastsection1 ul li:nth-child(1) h2 {
+  color: #fff;
+}
+.lastsection1 ul li:nth-child(1) p {
+  color: #fff;
+}
+.lastsection1 ul li:nth-child(2) {
+  margin-left: -52px;
+}
+.lastsection1 ul li:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 35%;
+  right: 0;
+  bottom: 0;
+  background-image: url(../../public/epic_global/shape-1.png);
+  background-repeat: no-repeat;
+}
+.lastsection1 ul li:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 64%;
+  left: 85%;
+  right: 0;
+  bottom: 0;
+  background-image: url(../../public/epic_global/shape-2.png);
+  background-repeat: no-repeat;
+}
+.industrylastsection ul:nth-child(1){
+  background-color: red;
+  border-color: #FE0803;
+}
+.industrylastsection ul{
+background-color: #E7E7E7;
+border-color: #E7E7E7 !important;
+} 
+.industrylastsection ul:nth-child(1) li:nth-child(2) {
+  color: #fff;
+}
+.lastsectionontainer {
+  max-width: 1460px;
+}
+.lastsectionheading {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.lastsectionheading h3 {
+  color: #FE0803;
+  text-align: center;
+  font-size: 56px;
+}
+.lastsection1 ul li:nth-child(2) img { 
+  width: 1300px;
+  border-radius: 260px;
+  height: 458px;
+}
+.lastsection {
+  padding: 90px 0px 0px 0px;
+}
+.industrylastsection ul {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid;
+  margin-left: 150px;
+  padding: 10px 10px 4px 0px;
+  border-radius: 25px 0px 0px 25px;
+  margin-bottom: 30px;
+}
+.industrylastsection ul li:nth-child(2) {
+  padding-left: 10px;
 }

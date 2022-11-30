@@ -4,6 +4,8 @@ import React from "react";
 import styles from "styles/otherstyle/home.module.scss";
 import PhoneIcon from "icons/PhoneIcon";
 import Link from "next/link";
+import SearchIcon from "icons/SearchIcon";
+import MailIcon from "icons/MailIcon";
 
 const Header = () => {
   const [textChange, setTextChange] = React.useState("CREATIVE");
@@ -18,7 +20,12 @@ const Header = () => {
               <div className={styles.rightsideheader}>
                 <ul>
                   <li>
-                    <PhoneIcon />
+                    <Link href={"#"}>
+                      <a>
+                        {" "}
+                        <PhoneIcon />
+                      </a>
+                    </Link>
                   </li>
                   <li>
                     <Link href={"#"}>
@@ -28,7 +35,12 @@ const Header = () => {
                 </ul>
                 <ul>
                   <li>
-                    <PhoneIcon />
+                    <Link href={"#"}>
+                      <a>
+                        {" "}
+                        <MailIcon />
+                      </a>
+                    </Link>
                   </li>
                   <li>
                     <Link href={"#"}>
@@ -80,6 +92,14 @@ const Header = () => {
                   <li>
                     <Link href={"#"}>
                       <a>Seo Analysis</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href={"#"}>
+                      <a>
+                        {" "}
+                        <SearchIcon />
+                      </a>
                     </Link>
                   </li>
                 </ul>
