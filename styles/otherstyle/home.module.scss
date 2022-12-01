@@ -199,7 +199,7 @@ p.businesspara1 {
  margin-top: 140px;
 }
 .emailsection h2 {
-  font-size: 57px;
+  font-size: 50px;
   color: #fff;
   padding-left: 40px;
 }
@@ -308,6 +308,9 @@ p.businesspara1 {
   z-index: 99;
   opacity: 0.5;
 }
+.industrylastsection ul:nth-child(1) li:nth-child(1) svg {
+  fill: #fff;
+}
 .lastsection1 ul li:nth-child(1) h2 {
   color: #fff;
 }
@@ -379,4 +382,117 @@ border-color: #E7E7E7 !important;
 }
 .industrylastsection ul li:nth-child(2) {
   padding-left: 10px;
+}
+@media (max-width:768px) {
+  .mainmenu ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainmenu ul li {
+    line-height: 50px;
+    border-bottom: 1px solid #00000042;
+    margin-left: 0;
+  }
+  .mainmenu ul li a {
+    padding-left: 18px;
+  }
+  .mainmenu ul li:nth-child(7){
+    display: none;
+  }
+  .mainbanner h1 { 
+    font-size: 50px;
+  }
+  .section3 .productSpec { 
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .digitalmarketing h2 {
+    font-size: 30px;
+  }
+  .digitalmarketing p {
+    font-size: 14px;
+  }
+  .productSpec {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .businesssection button {
+    padding: 18px 30px 21px 20px !important;
+    font-size: 16px !important;
+  }
+  .businesssection input {
+    padding: 22px 20px 22px 20px !important;
+  }
+  .businesssection input::placeholder {
+    font-size: 15px !important;
+  }
+  .businesssection p {
+    font-size: 26px;
+  }
+  .emailsection {
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+    height: auto;
+  }
+  .emailsection h2 {
+    font-size: 15px;
+  }
+  .whowework1 {
+    padding-top: 30px;
+  }
+  .whowearesection {
+    padding-top: 20px;
+    padding-left: 15px;
+    position: static;
+  }
+  .workingsection1 h2 {
+    font-size: 28px;
+  }
+  .workingsection1 p {
+    font-size: 18px;
+    margin-left: 0;
+  }
+  .betterinformationsection h2 {
+    font-size: 20px;
+  }
+  .beauticianslider1 h2 {
+    font-size: 25px;
+  }
+  .beauticianslider1 p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .beauticianslider1 button {
+    padding: 15px 30px 15px 30px;
+    font-size: 15px;
+  }
+  .lastsectionheading h3 {
+    font-size: 30px;
+  }
+}
+
+// MENU STYLE
+.menu-icon{
+  display: none;
+}
+
+
+@media screen and (max-width:768px) {
+  .menu-icon{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .mainmenu{
+    position: fixed;
+    top: 62px;
+    left: 0;
+    background: azure;
+    width: 100%;
+    min-height: 400px;
+    transform: scaleY(1);
+    transition: all 200ms ease;
+    // transform: scaleY(0);
+    transform-origin: top;
+  }
 }

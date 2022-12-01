@@ -6,6 +6,7 @@ import PhoneIcon from "icons/PhoneIcon";
 import Link from "next/link";
 import SearchIcon from "icons/SearchIcon";
 import MailIcon from "icons/MailIcon";
+import MenuIcon from "icons/MenuIcon";
 
 const Header = () => {
   const [textChange, setTextChange] = React.useState("CREATIVE");
@@ -62,6 +63,10 @@ const Header = () => {
               </div>
             </div>
             <div className="col-8">
+              <div className={styles["menu-icon"]}>
+                <MenuIcon />
+              </div>
+
               <div className={styles.mainmenu}>
                 <ul>
                   <li>

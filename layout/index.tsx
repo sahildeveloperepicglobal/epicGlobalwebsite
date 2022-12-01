@@ -3,6 +3,7 @@ import React from "react";
 import Footer from "./footer";
 import LeftIcon from "icons/LeftArrow";
 import Header from "./header";
+import footer from "./footer";
 import Image from "next/image";
 import styles from "styles/otherstyle/home.module.scss";
 const GlobalLayout = ({ children }: React.PropsWithChildren<{}>) => {
@@ -33,7 +34,7 @@ const GlobalLayout = ({ children }: React.PropsWithChildren<{}>) => {
       <section className={styles.section3}>
         <div className={`${styles.productSpecs} container`}>
           <div className="row">
-            <div className="col-6">
+            <div className={`${styles.productSpec} col-6`}>
               <div className={styles.whowearesection}>
                 <h2>WHO WE ARE</h2>
                 <p>
@@ -94,7 +95,7 @@ const GlobalLayout = ({ children }: React.PropsWithChildren<{}>) => {
       <section className={styles.growingbusinesssection}>
         <div className={`${styles.productSpecs} container`}>
           <div className="row">
-            <div className="col-8">
+            <div className={`${styles.productSpec} col-8`}>
               <div className={styles.businesssection}>
                 <p>
                   We put together successful digital marketing campaigns for
@@ -108,7 +109,7 @@ const GlobalLayout = ({ children }: React.PropsWithChildren<{}>) => {
                 </form>
               </div>
             </div>
-            <div className="col-4">
+            <div className={`${styles.productSpec} col-4`}>
               <div className={styles.businesssection1}>
                 <p>
                   ARE YOU READY TO <span>GROW</span>?
@@ -126,7 +127,7 @@ const GlobalLayout = ({ children }: React.PropsWithChildren<{}>) => {
           <div className="row">
             <div className="col-12">
               <h2>
-                Kick start your strategic campaign today! <br></br>or mail
+                Kick start your strategic campaign today! or mail
                 hello@epicglobal.com
               </h2>
             </div>
@@ -316,6 +317,7 @@ const GlobalLayout = ({ children }: React.PropsWithChildren<{}>) => {
           </div>
         </div>
       </section>
+      <Footer />
     </React.Fragment>
   );
 };
