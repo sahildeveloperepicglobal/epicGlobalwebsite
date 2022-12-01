@@ -4,8 +4,8 @@ import { Splide, SplideSlide, SplideProps } from "@splidejs/react-splide";
 
 interface ImagesArrayType {
   imageUrl: string;
-  description: string;
-  heading: string;
+  description?: string;
+  heading?: string;
 }
 
 interface SliderComponentProps extends SplideProps {
