@@ -1,0 +1,69 @@
+.Header-parent {
+  padding: 10px 40px;
+  position: sticky;
+  z-index: 1;
+  backdrop-filter: blur(12px);
+  background: #fff9;
+  // position: absolute;
+  // width: 100%;
+  top: 0;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  .header-left {
+    ul {
+      li {
+        img {
+          padding-top: 5px;
+        }
+      }
+    }
+  }
+  .header-right {
+    color: black;
+    padding: 10px 0;
+    ul {
+      display: flex;
+      gap: 20px;
+
+      a {
+        li {
+          transform: scale(1);
+          transition: 800ms;
+        }
+        li:hover {
+          transform: scale(1.1);
+          transition: 1000ms;
+        }
+      }
+      a:hover {
+        color: red;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+.nav-bar {
+  color: black;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    li {
+      list-style: none;
+      a {
+        padding-bottom: 5px;
+      }
+
+      a:hover {
+        border-bottom: 3px solid red;
+      }
+    }
+  }
+}
