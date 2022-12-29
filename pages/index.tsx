@@ -4,8 +4,13 @@ import css from "../styles/home.module.scss";
 import Image from "next/image";
 import Slider from "components/slider";
 import Grid from "components/grid";
+import dynamic from "next/dynamic";
+const Blog = dynamic(() => import("components/blog"), {
+  ssr: false,
+});
 
-export default function Home() {
+export default function Home({ BlogData }) {
+  console.log(BlogData);
   return (
     <React.Fragment>
       <Head>
@@ -100,6 +105,7 @@ export default function Home() {
       {/* Join Mission Section End */}
       <Grid />
       <Mission />
+      <Blog data={BlogData} />
     </React.Fragment>
   );
 }
@@ -132,3 +138,15 @@ export function Mission() {
     </div>
   );
 }
+
+export const getServerSideProps = async () => {
+  const response = await fetch(
+    `https://blog.epicglobal.co.in/wp-json/wp/v2/posts`
+  );
+  const BlogData = await response.json();
+  return {
+    props: {
+      BlogData,
+    },
+  };
+};
