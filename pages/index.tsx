@@ -9,7 +9,11 @@ const Blog = dynamic(() => import("components/blog"), {
   ssr: false,
 });
 
-export default function Home({ BlogData }) {
+interface Home {
+  BlogData: any;
+}
+
+export default function Home({ BlogData }: Home) {
   console.log(BlogData);
   return (
     <React.Fragment>
