@@ -9,7 +9,7 @@ const Footer = () => {
         <h1>How can we help you?</h1>
         {/* <h2>Get in touch</h2> */}
         <span>
-          <a href="tel:+911204176500" className={css["shaky-btn"]}>
+          <a href="tel:+911204176500" className={css["neon-button"]}>
             Contact Us
           </a>
         </span>
@@ -41,15 +41,13 @@ const Footer = () => {
               width={250}
             ></Image>
             <p>
-              DXC Technology (NYSE: DXC) helps global companies run their
-              mission-critical systems and operations while modernizing IT,
-              optimizing data architectures, and ensuring security and
-              scalability across public, private and hybrid clouds. The world's
-              largest companies and public sector organizations trust DXC to
-              deploy services to drive new levels of performance,
-              competitiveness, and customer experience across their IT estates.
-              Learn more about how we deliver excellence for our customers and
-              colleagues at DXC.com.
+              Epic Global helps global companies run their mission-critical
+              systems and operations while modernizing IT, optimizing data
+              architectures, and ensuring security and scalability across
+              public, private and hybrid clouds. The world&rsquo;s largest
+              companies and public sector organizations trust Epic to deploy
+              services to drive new levels of performance, competitiveness, and
+              customer experience across their IT estates.
             </p>
           </div>
         </div>
