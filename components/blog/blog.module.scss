@@ -1,0 +1,12 @@
+.blogGrid {
+  display: grid;
+  column-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  > a {
+    padding: 30px;
+    border: 1px solid;
+  }
+  img {
+    justify-content: center;
+  }
+}
