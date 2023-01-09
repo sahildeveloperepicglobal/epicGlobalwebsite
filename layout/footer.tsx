@@ -49,34 +49,13 @@ const Footer = () => {
                 started getting underway with staffing servers and web
                 Development, our story started, later on, in 2019 we positioned
                 ourselves more towards customized applications including
-                business support (BOP and KPO). By dint of a professional and
-                experienced team, we are able to develop customized IT services
-                for clients. We provide IT services to all types of
-                organizations including government and non-government
-                organizations. To ensure the quality of work along with its
-                betterment day by day, we believe in taking feedback from all
-                our stakeholders.{" "}
+                business support (BPO and KPO).
               </li>
               <li>
                 {" "}
-                Working on any creative idea has always been a priority in our
-                organizations. A few core values that surely make us stand out
-                in the crowd are :{" "}
-              </li>
-              <li> - Customer-first</li>
-              <li> - Quality Focused </li>
-              <li>- The right of a person to be valued</li>
-              <li>
-                {" "}
-                Currently, we are serving in +28 countries all across the world
+                Currently, we are serving in 28+ countries all across the world
                 with quite a long list of happy and satisfied clients.
               </li>{" "}
-              <li>
-                {" "}
-                Nevertheless, we continuously strive to strengthen our
-                relationship with our clients by proving the best services and
-                solutions offered in the town.
-              </li>
             </ul>
           </div>
         </div>
