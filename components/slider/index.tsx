@@ -8,7 +8,7 @@ const Slider = () => {
   return (
     <div className={css["container"]}>
       <div className={`${css["aws-partner"]}`}>
-        <h2>We are AWS Consulting Partner</h2>
+        <h2>Technology Partner</h2>
       </div>
       <Splide
         options={{
@@ -22,11 +22,11 @@ const Slider = () => {
       >
         <SplideSlide>
           <SlideItem
-            imageUrl={"/amazon.png"}
-            description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et nobis ex inventore a error molestias assumenda odio nesciunt odit neque harum sequi, obcaecati cum ducimus eveniet officiis? Natus, nemo a."
+            imageUrl={"/DigitalOcean_logo.jpg"}
+            description="Epic Global has partnered with DigitalOcean, a cloud infrastructure provider, to provide a comprehensive cloud-based solution for our customers. The partnership will enable Epic Global customers to leverage DigitalOcean’s cloud infrastructure and services to build and manage their cloud-native applications and services. Through this partnership, Epic Global customers will benefit from DigitalOcean’s advanced cloud platform, which offers a wide range of services such as compute, storage, networking, and more, as well as its robust security measures. Additionally, the partnership will enable Epic Global customers to quickly and easily deploy and manage their applications in the cloud. This partnership will enable Epic Global to further expand its offerings and provide its customers with the best cloud-based solutions available."
           />
         </SplideSlide>
-        <SplideSlide>
+        {/* <SplideSlide>
           <SlideItem
             imageUrl={"/amazon.png"}
             description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et nobis ex inventore a error molestias assumenda odio nesciunt odit neque harum sequi, obcaecati cum ducimus eveniet officiis? Natus, nemo a."
@@ -49,7 +49,7 @@ const Slider = () => {
             imageUrl={"/amazon.png"}
             description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et nobis ex inventore a error molestias assumenda odio nesciunt odit neque harum sequi, obcaecati cum ducimus eveniet officiis? Natus, nemo a."
           />
-        </SplideSlide>
+        </SplideSlide> */}
       </Splide>
     </div>
   );

@@ -1,7 +1,11 @@
+.grid-container h2 {
+  text-align: center;
+  padding-bottom: 25px;
+}
 .grid-template {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 20px 0;
+  padding: 30px 0;
   .left-grid {
     min-width: 100%;
     min-height: 100%;
