@@ -5,6 +5,7 @@ import Image from "next/image";
 import Slider from "components/slider";
 import Grid from "components/grid";
 import dynamic from "next/dynamic";
+
 const Blog = dynamic(() => import("components/blog"), {
   ssr: false,
 });
@@ -43,7 +44,7 @@ export default function Home({ BlogData }: Home) {
           We are obsessed with quality. We have an amazing team that is ready to
           conquer any task.
         </span>
-        <div className="container">
+        <div className={`${css["container"]} container2 mcenter`}>
           <div className={`${css["sections-devide"]}`}>
             <div className={css["first-section"]}>
               <Image

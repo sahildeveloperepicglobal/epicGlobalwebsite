@@ -35,6 +35,7 @@ const Footer = () => {
           </div>
           <div className={css["bottom-right"]}>
             <Image
+              className={css["epic"]}
               src="/epic-logo.png"
               alt="logo"
               height={45}

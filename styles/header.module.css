@@ -1,0 +1,113 @@
+@media only screen and (min-width: 1250px) {
+  .Header-parent {
+    padding: 10px 40px;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.6);
+    top: 0;
+    background: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header .header-left ul li img {
+    padding-top: 5px;
+  }
+  .header .header-right {
+    color: black;
+    padding: 10px 0;
+  }
+  .header .header-right ul {
+    display: flex;
+    gap: 20px;
+  }
+  .header .header-right ul a li {
+    transform: scale(1);
+    transition: 800ms;
+  }
+  .header .header-right ul a li:hover {
+    transform: scale(1.1);
+    transition: 1000ms;
+  }
+  .header .header-right ul a:hover {
+    color: red;
+    padding-bottom: 10px;
+  }
+  .nav-bar {
+    color: black;
+  }
+  .nav-bar svg {
+    display: none;
+  }
+  .nav-bar ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  .nav-bar ul li {
+    list-style: none;
+  }
+  .nav-bar ul li a {
+    padding-bottom: 5px;
+  }
+  .nav-bar ul li a:hover {
+    border-bottom: 3px solid red;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .Header-parent {
+    padding: 10px 40px;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.6);
+    top: 0;
+    background: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  .header .header-right {
+    z-index: 10;
+  }
+  .header .header-right .mobile-view {
+    padding-bottom: 10px;
+  }
+  .header .header-right .mobile-view a li {
+    padding: 5px 0 0 60px;
+  }
+  .header .header-right .nav-bar {
+    padding: 5px 5px 2px 5px;
+    border-radius: 3px;
+  }
+  .header .header-right ul .nav-anchor li {
+    width: 40px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: black;
+  }
+  .mobile-view.hide,
+.mobile-view.show {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.7607843137);
+    width: 100%;
+    left: 0;
+    top: 105px;
+    transform: scaleY(0);
+    -webkit-backdrop-filter: blur(32px);
+            backdrop-filter: blur(32px);
+    transform-origin: top;
+    transition: all 100ms ease-in;
+  }
+  .mobile-view.show {
+    transform: scaleY(1);
+  }
+}/*# sourceMappingURL=header.module.css.map */

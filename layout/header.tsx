@@ -1,33 +1,54 @@
+import CloseIcon from "icons/CloseIcon";
+import MenuIcon from "icons/MenuIcon";
 import Image from "next/image";
-import useSticky from "hooks/use-sticky";
+import React from "react";
+
 import css from "../styles/header.module.scss";
 
 const Header = () => {
-  const [sticky, ref] = useSticky<HTMLDivElement>();
+  const [toggleNavbar, setToggleNavbar] = React.useState(false);
 
-  console.log(sticky);
+  const onToggle = () => {
+    // if (toggleNavbar === false) {
+    //   setToggleNavbar(true);
+    // } else {
+    //   setToggleNavbar(false);
+    // }
+
+    setToggleNavbar(!toggleNavbar);
+  };
+
+  console.log(toggleNavbar);
   return (
-    <div ref={ref} className={css["Header-parent"]}>
+    <div className={css["Header-parent"]}>
       <div className={css["header"]}>
         <div className={css["header-left"]}>
           <ul>
-            {sticky ? (
-              <p>Simple</p>
-            ) : (
-              <li>
-                <Image
-                  src={"/epic-logo.png"}
-                  height={50}
-                  width={250}
-                  alt="logo"
-                ></Image>
-              </li>
-            )}
+            <li>
+              <Image
+                src={"/epic-logo.png"}
+                height={50}
+                width={250}
+                alt="logo"
+              ></Image>
+            </li>
           </ul>
         </div>
 
         <div className={css["header-right"]}>
-          <ul>
+          <ul className={css["nav-bar"]} onClick={onToggle}>
+            {toggleNavbar ? <CloseIcon /> : <MenuIcon />}
+            {/* <a className={css["nav-anchor"]}>
+              <li></li>
+              <li></li>
+              <li></li>
+            </a> */}
+          </ul>
+          <ul
+            className={`${css["mobile-view"]} ${
+              toggleNavbar ? css["show"] : css["hide"]
+            }`}
+          >
             <a href="">
               <li>Business Process Services</li>
             </a>
