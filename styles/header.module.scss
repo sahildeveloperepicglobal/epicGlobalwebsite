@@ -20,6 +20,8 @@
         li {
           img {
             padding-top: 5px;
+            width: 55%;
+            height: auto;
           }
         }
       }
@@ -43,7 +45,6 @@
         }
         a:hover {
           color: red;
-          padding-bottom: 10px;
         }
       }
     }
@@ -89,7 +90,12 @@
   .header {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: 5px;
+    .header-left > ul > li > img {
+      width: 55%;
+      height: auto;
+      margin-top: 5px;
+    }
     .header-right {
       z-index: 10;
       // ul {
@@ -136,7 +142,7 @@
     background: #ffffffc2;
     width: 100%;
     left: 0;
-    top: 105px;
+    top: 74px;
     transform: scaleY(0);
 
     backdrop-filter: blur(32px);
@@ -146,5 +152,32 @@
 
   .mobile-view.show {
     transform: scaleY(1);
+  }
+}
+@media only screen and (max-width: 426px) {
+  .mobile-view.hide,
+  .mobile-view.show {
+    top: 54px;
+  }
+  .Header-parent {
+    padding: 0px 5px;
+  }
+  .header {
+    .header-right {
+      display: grid;
+      align-items: center;
+    }
+  }
+}
+@media only screen and (max-width: 376px) {
+  .mobile-view.hide,
+  .mobile-view.show {
+    top: 54px;
+  }
+}
+@media only screen and (max-width: 321px) {
+  .mobile-view.hide,
+  .mobile-view.show {
+    top: 49px;
   }
 }

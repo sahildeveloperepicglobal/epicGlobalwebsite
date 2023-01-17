@@ -83,6 +83,12 @@
     padding: 30px 60px !important;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .footer {
+    position: relative;
+    top: 120px;
+  }
+}
 @media only screen and (max-width: 769px) {
   .bottom-parent {
     grid-template-columns: 1fr !important;
@@ -100,8 +106,18 @@
   }
 }
 @media only screen and (max-width: 426px) {
+  .footer {
+    top: 0;
+  }
   .bottom-parent {
-    padding: 0 20px 10px 20px !important;
+    .bottom-right ul li {
+      font-size: 16px;
+    }
+    padding: 0 30px 30px 30px !important;
+    > div > img {
+      width: 192px;
+      height: auto;
+    }
   }
 }
 @media only screen and (max-width: 376px) {
@@ -122,5 +138,10 @@
     .bottom-left {
       line-height: 2 !important;
     }
+  }
+}
+@media only screen and (max-width: 320px) {
+  .bottom-parent {
+    padding: 0 10px 20px 10px !important;
   }
 }

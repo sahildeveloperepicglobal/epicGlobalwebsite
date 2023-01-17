@@ -11,8 +11,8 @@ const Grid = () => {
           <Image
             src={"/Affordable.jpg"}
             alt="latest updates"
-            height={300}
-            width={300}
+            height={1200}
+            width={1200}
           ></Image>
         </div>
         <div className={css["right-grid"]}>
@@ -28,8 +28,7 @@ const Grid = () => {
             <div className={css["right-text"]}>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus vitae totam voluptates numquam itaque, rem accusamus
-                dolore,
+                Doloribus vitae totam voluptates numquam itaque,
               </p>
             </div>
           </div>

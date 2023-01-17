@@ -10,6 +10,9 @@ function BlogSlider({ data }: BlogSliderProps) {
   return (
     <>
       <div className="container" style={{ position: "relative" }}>
+        <div className={`${Styles.blogs_heading}`}>
+          <h1>Latest Updates</h1>
+        </div>
         <div className={` ${Styles.blogGrid} row`}>
           {data.map((item: any, index: number) => {
             return (

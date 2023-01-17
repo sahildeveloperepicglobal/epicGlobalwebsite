@@ -1,7 +1,7 @@
 .blogGrid {
   display: grid;
   -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
 }
 .blogGrid > a {
@@ -25,4 +25,4 @@
     width: -moz-min-content;
     width: min-content;
   }
-}/*# sourceMappingURL=blog.module.css.map */
+} /*# sourceMappingURL=blog.module.css.map */

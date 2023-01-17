@@ -48,9 +48,9 @@ li {
 //   }
 // }
 
-@media only screen and (max-width: 376px) {
-  body li,
-  p {
+@media only screen and (max-width: 427px) {
+  body p {
     font-size: 16px;
+    // padding: 20px 10px;
   }
 }

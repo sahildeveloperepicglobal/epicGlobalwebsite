@@ -6,7 +6,7 @@ const Layout = ({ children }: React.PropsWithChildren<{}>) => {
   return (
     <React.Fragment>
       <Header />
-      <main>{children}</main>
+      <main className="main">{children}</main>
       <Footer />
     </React.Fragment>
   );
