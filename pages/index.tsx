@@ -38,12 +38,33 @@ export default function Home({ BlogData }: Home) {
 
       {/* Discover Section Start */}
 
-      <div className={css["Discover-section"]}>
-        <h1>Discover Epic Global</h1>
-        <span>
-          We are obsessed with quality. We have an amazing team that is ready to
-          conquer any task.
-        </span>
+      <div className={`${css["Discover-section"]}`}>
+        <div className={`${css["wavy"]}`}>
+          <span>D</span>
+          <span>i</span>
+          <span>s</span>
+          <span>c</span>
+          <span>o</span>
+          <span>v</span>
+          <span>e</span>
+          <span>r</span>
+          <span>&nbsp; E</span>
+          <span>p</span>
+          <span>i</span>
+          <span>c</span>
+          <span>&nbsp; G</span>
+          <span>l</span>
+          <span>o</span>
+          <span>b</span>
+          <span>a</span>
+          <span>l</span>
+        </div>
+        <div className={`${css["below-discover"]}`}>
+          <span>
+            We are obsessed with quality. We have an amazing team that is ready
+            to conquer any task.
+          </span>
+        </div>
         <div className={`${css["container"]} container2 mcenter`}>
           <div className={`${css["sections-devide"]}`}>
             <div className={css["first-section"]}>
