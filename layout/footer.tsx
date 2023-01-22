@@ -6,16 +6,21 @@ const Footer = () => {
   return (
     <React.Fragment>
       <div className={css["footer"]}>
-        <h1>How can we help you?</h1>
-        {/* <h2>Get in touch</h2> */}
-        <span>
-          <a href="tel:+911204176500" className={css["neon-button"]}>
-            Contact Us
-          </a>
-        </span>
+        <div className={css["button-parent"]}>
+          <h1>How can we help you?</h1>
+
+          <div className={css["contact-button"]}>
+            <a href="tel:+911204176500" className={css["neon-button"]}>
+              <span>Contact Us </span>
+            </a>
+          </div>
+        </div>
         <div className={`${css["bottom-parent"]} container2 mcenter`}>
           <div className={css["bottom-left"]}>
             <ul>
+              <li>
+                <a href="about">About Us</a>
+              </li>
               <li>
                 <a href="#">Business Process Services</a>
               </li>
@@ -29,7 +34,7 @@ const Footer = () => {
                 <a href="#">Online Marketing</a>
               </li>
               <li>
-                <a href="#">Contact Us</a>
+                <a href="contact_us">Contact Us</a>
               </li>
             </ul>
           </div>

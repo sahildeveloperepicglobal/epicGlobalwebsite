@@ -40,24 +40,25 @@ export default function Home({ BlogData }: Home) {
 
       <div className={`${css["Discover-section"]}`}>
         <div className={`${css["wavy"]}`}>
-          <span>D</span>
-          <span>i</span>
-          <span>s</span>
-          <span>c</span>
-          <span>o</span>
-          <span>v</span>
-          <span>e</span>
-          <span>r</span>
-          <span>&nbsp; E</span>
-          <span>p</span>
-          <span>i</span>
-          <span>c</span>
-          <span>&nbsp; G</span>
-          <span>l</span>
-          <span>o</span>
-          <span>b</span>
-          <span>a</span>
-          <span>l</span>
+          <div style={{ ["--i" as any]: "1" }}></div>
+          <span style={{ ["--i" as any]: "2" }}>D</span>
+          <span style={{ ["--i" as any]: "3" }}>i</span>
+          <span style={{ ["--i" as any]: "4" }}>s</span>
+          <span style={{ ["--i" as any]: "5" }}>c</span>
+          <span style={{ ["--i" as any]: "6" }}>o</span>
+          <span style={{ ["--i" as any]: "7" }}>v</span>
+          <span style={{ ["--i" as any]: "8" }}>e</span>
+          <span style={{ ["--i" as any]: "9" }}>r</span>
+          <span style={{ ["--i" as any]: "10" }}>&nbsp; E</span>
+          <span style={{ ["--i" as any]: "11" }}>p</span>
+          <span style={{ ["--i" as any]: "12" }}>i</span>
+          <span style={{ ["--i" as any]: "13" }}>c</span>
+          <span style={{ ["--i" as any]: "14" }}>&nbsp; G</span>
+          <span style={{ ["--i" as any]: "15" }}>l</span>
+          <span style={{ ["--i" as any]: "16" }}>o</span>
+          <span style={{ ["--i" as any]: "17" }}>b</span>
+          <span style={{ ["--i" as any]: "18" }}>a</span>
+          <span style={{ ["--i" as any]: "19" }}>l</span>
         </div>
         <div className={`${css["below-discover"]}`}>
           <span>

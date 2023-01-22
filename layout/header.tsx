@@ -25,12 +25,14 @@ const Header = () => {
         <div className={css["header-left"]}>
           <ul>
             <li>
-              <Image
-                src={"/epic-logo.png"}
-                height={50}
-                width={250}
-                alt="logo"
-              ></Image>
+              <a href={"/"}>
+                <Image
+                  src={"/epic-logo.png"}
+                  height={50}
+                  width={250}
+                  alt="logo"
+                ></Image>
+              </a>
             </li>
           </ul>
         </div>

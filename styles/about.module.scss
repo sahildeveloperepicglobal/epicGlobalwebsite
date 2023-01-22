@@ -1,0 +1,133 @@
+.about-us {
+  .first-section {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 50px 0;
+    .left-first {
+      flex: 1;
+      transition: 1000ms;
+      &:hover {
+        border-radius: 5px;
+        box-shadow: 0px 5px 5px 5px #e5e5e5;
+        transition: 1000ms;
+      }
+      p {
+        margin-top: 10px;
+        padding: 0 20px 20px 20px;
+      }
+      h1 {
+        padding-left: 20px;
+        padding-top: 10px;
+      }
+    }
+    .right-first {
+      flex: 1;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: auto;
+        transform: scale(1);
+        transition: 1000ms;
+        &:hover {
+          transform: scale(1.1);
+          transition: 1000ms;
+        }
+      }
+    }
+  }
+  .second-section {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 50px 0;
+    .left-second {
+      flex: 1;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: auto;
+        transform: scale(1);
+        transition: 1000ms;
+        &:hover {
+          transform: scale(1.1);
+          transition: 1000ms;
+        }
+      }
+    }
+    .right-second {
+      flex: 1;
+      transition: 1000ms;
+
+      &:hover {
+        border-radius: 5px;
+        box-shadow: 0px 5px 5px 5px #e5e5e5;
+        transition: 1000ms;
+      }
+      h1 {
+        margin-top: -10px;
+        font-size: xx-large;
+        padding-left: 20px;
+        padding-top: 10px;
+      }
+      p {
+        margin-top: 10px;
+        padding: 0 20px 20px 20px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .first-section {
+    padding: 50px 50px 20px 50px !important;
+  }
+  .second-section {
+    padding: 50px 50px 20px 50px !important;
+  }
+}
+@media only screen and (max-width: 999px) {
+  .first-section {
+    flex-direction: column;
+  }
+  .second-section {
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .first-section {
+    .left-first {
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+  .second-section {
+    gap: 50px !important;
+
+    .right-second {
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 426px) {
+  .first-section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    gap: 50px !important;
+  }
+  .second-section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .second-section {
+    padding-top: 0 !important;
+  }
+  .first-section {
+    padding-top: 0 !important;
+  }
+}
