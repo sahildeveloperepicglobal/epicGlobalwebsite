@@ -1,0 +1,188 @@
+.design-ui {
+  .design-banner {
+    background: url(/design-logo.jpg);
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    .inside-banner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      height: 80vh;
+      .left-part {
+        color: white;
+        line-height: 2;
+      }
+    }
+  }
+  .below-bannner {
+    .needs-section {
+      padding: 30px 0;
+      display: grid;
+      align-content: center;
+      gap: 20px;
+      h2 {
+        text-align: center;
+      }
+    }
+    .epic-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 100px;
+      padding: 30px 0;
+      .epic-card1,
+      .epic-card2 {
+        padding: 20px;
+        border: 1px solid grey;
+        border-radius: 10px;
+        transition: 500ms;
+
+        &:hover {
+          box-shadow: 4px 4px 11px 3px #d4d2d2;
+          transition: 500ms;
+          //
+        }
+        img {
+          width: 100%;
+          height: auto;
+          padding-bottom: 10px;
+        }
+      }
+    }
+    .client-section {
+      height: 30vh;
+      display: grid;
+      align-content: center;
+      gap: 20px;
+
+      h2 {
+        text-align: center;
+      }
+    }
+    .row-cards {
+      .RowCard1Parent {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 50px;
+        align-items: center;
+        padding: 40px;
+        transition: 300ms;
+        margin: 20px 0;
+        border: 1px solid grey;
+        border-radius: 7px;
+        &:hover {
+          box-shadow: 4px 4px 11px 3px #d4d2d2;
+          transition: 300ms;
+        }
+        .row-left-part {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1251px) {
+  .design-ui {
+    .design-banner {
+      .inside-banner {
+        padding: 0 50px;
+      }
+    }
+    .below-bannner {
+      padding: 0 50px;
+      .epic-cards {
+        gap: 50px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .design-ui {
+    .below-bannner {
+      .row-cards {
+        margin-bottom: -40px;
+      }
+    }
+    .design-banner .inside-banner .left-part h1 {
+      font-size: 24px;
+    }
+  }
+}
+@media only screen and (max-width: 769px) {
+  .design-ui {
+    .design-banner .inside-banner {
+      grid-template-columns: 2fr 1fr;
+      .left-part {
+        h1 {
+        }
+      }
+    }
+    .below-bannner {
+      .epic-cards {
+        gap: 20px;
+      }
+      .row-cards {
+        .RowCard1Parent {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 426px) {
+  .design-ui {
+    .design-banner {
+      height: 450px;
+      .inside-banner {
+        grid-template-columns: 1fr;
+        padding: 0 30px;
+        .left-part h1 {
+          font-size: 20px;
+        }
+      }
+    }
+    .below-bannner {
+      padding: 0 30px;
+      .needs-section h2 {
+        font-size: 20px;
+      }
+      .epic-cards {
+        grid-template-columns: 1fr;
+        padding: 20px 0;
+      }
+      .client-section {
+        h2 {
+          font-size: 20px;
+        }
+      }
+      .row-cards {
+        margin: 0;
+        .RowCard1Parent {
+          grid-template-columns: 1fr;
+          gap: 10px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 376px) {
+  .design-ui {
+    .design-banner {
+      height: 350px;
+      .inside-banner {
+        padding: 0 20px;
+        height: 400px;
+        .left-part {
+          line-height: 1.5;
+        }
+      }
+    }
+    .below-bannner {
+      padding: 0 20px;
+    }
+  }
+}

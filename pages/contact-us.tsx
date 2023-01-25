@@ -82,7 +82,7 @@ const AddressData = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.1337802519674!2d77.37461772557941!3d28.62575232619224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef387aa571c5%3A0x3a20601e5ef21ab7!2sEpic%20Global!5e0!3m2!1sen!2sin!4v1674069002352!5m2!1sen!2sin",
   },
   {
-    country: "Bilston",
+    country: "United kingdom",
     address:
       "Unit 8a Stag Industrial Estate Oxford Street Bilston Wolverhampton WV14 7HZ",
     phone: [" +91 2104176500"],
@@ -90,14 +90,14 @@ const AddressData = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.1337802519674!2d77.37461772557941!3d28.62575232619224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef387aa571c5%3A0x3a20601e5ef21ab7!2sEpic%20Global!5e0!3m2!1sen!2sin!4v1674069002352!5m2!1sen!2sin",
   },
   {
-    country: "Dubai",
+    country: "UAE",
     address: "Suit 205 Palacio towers, Dubai Silicon Oasis",
     phone: [" +91 2104176500"],
     mapLink:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462562.65096044086!2d54.947294892116!3d25.075759453120334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1674069095675!5m2!1sen!2sin",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.694600273895!2d55.382951014707096!3d25.112197383935797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6468a0313efd%3A0xd0433db4a8ddaf9c!2sEpic%20Global%20-%20Dubai%20Epic%20Global%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1674557103459!5m2!1sen!2sin",
   },
   {
-    country: "Canada",
+    country: "North America",
     address: "1 Yonge St Suite #1801, Toronto, ON M5E 1W7",
     phone: [" +91 2104176500"],
     mapLink:

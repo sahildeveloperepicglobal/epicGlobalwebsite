@@ -24,7 +24,6 @@
         &:nth-child(1)::before,
         &:nth-child(1):after {
           background: linear-gradient(45deg, #00ccff, pink, purple);
-          animation: animate 10s linear infinite;
         }
 
         &:hover:before {

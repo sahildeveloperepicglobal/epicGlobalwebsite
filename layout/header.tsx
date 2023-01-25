@@ -51,23 +51,23 @@ const Header = () => {
               toggleNavbar ? css["show"] : css["hide"]
             }`}
           >
-            <a href="">
+            <a href="business">
               <li>Business Process Services</li>
             </a>
 
-            <a href="">
+            <a href="project-management">
               <li>Project Management</li>
             </a>
 
-            <a href="">
+            <a href="design">
               <li>Design & Development</li>
             </a>
 
-            <a href="">
+            <a href="marketing">
               <li>Online Marketing</li>
             </a>
 
-            <a href="contact_us">
+            <a href="contact-us">
               <li>Contact Us</li>
             </a>
           </ul>

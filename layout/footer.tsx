@@ -10,7 +10,7 @@ const Footer = () => {
           <h1>How can we help you?</h1>
 
           <div className={css["contact-button"]}>
-            <a href="tel:+911204176500" className={css["neon-button"]}>
+            <a href="tel:+911204176500">
               <span>Contact Us </span>
             </a>
           </div>
@@ -22,19 +22,19 @@ const Footer = () => {
                 <a href="about">About Us</a>
               </li>
               <li>
-                <a href="#">Business Process Services</a>
+                <a href="business">Business Process Services</a>
               </li>
               <li>
-                <a href="#">Project Management</a>
+                <a href="project-management">Project Management</a>
               </li>
               <li>
-                <a href="#">Design & Development</a>
+                <a href="design">Design & Development</a>
               </li>
               <li>
-                <a href="#">Online Marketing</a>
+                <a href="marketing">Online Marketing</a>
               </li>
               <li>
-                <a href="contact_us">Contact Us</a>
+                <a href="contact-us">Contact Us</a>
               </li>
             </ul>
           </div>

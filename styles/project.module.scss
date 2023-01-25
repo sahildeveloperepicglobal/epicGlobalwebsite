@@ -1,0 +1,120 @@
+.project-management {
+  .first-block {
+    line-height: 1.5;
+    padding: 20px 0;
+    h1 {
+      text-align: center;
+    }
+  }
+  .second-block {
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+      justify-content: center;
+      padding: 30px 0;
+      .first-card,
+      .second-card,
+      .third-card {
+        padding: 15px;
+        transition: 500ms;
+        border-radius: 5px;
+        &:hover {
+          box-shadow: 4px 4px 11px 3px #d4d2d2;
+          transition: 500ms;
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  .third-block {
+    .bottom-parent {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      align-items: center;
+      gap: 20px;
+      padding: 15px;
+      margin-bottom: 30px;
+      transition: 500ms;
+      border-radius: 5px;
+      &:hover {
+        box-shadow: 4px 4px 11px 3px #d4d2d2;
+        transition: 500ms;
+      }
+      .left-image {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1251px) {
+  .project-management {
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .project-management {
+    .first-block {
+      h1 {
+        padding: 10px 0;
+      }
+    }
+    .third-block {
+      .bottom-parent {
+        padding-bottom: 0;
+        position: relative;
+        top: 35px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 769px) {
+  .project-management {
+    .second-block {
+      .cards {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    .third-block {
+      .bottom-parent {
+        grid-template-columns: 1fr 1fr;
+        p {
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 426px) {
+  .project-management {
+    padding: 0 30px;
+    .first-block {
+      padding: 0;
+      h1 {
+        font-size: 24px;
+      }
+    }
+    .second-block {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+    .third-block {
+      .bottom-parent {
+        grid-template-columns: 1fr;
+        top: 0;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 426px) {
+  .project-management {
+    padding: 0 20px;
+  }
+}

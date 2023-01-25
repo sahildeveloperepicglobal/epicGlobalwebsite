@@ -1,0 +1,232 @@
+.cover-page {
+  width: 100%;
+  .top-section {
+    background: url(/future.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .top-parent {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      height: 90vh;
+      align-items: center;
+    }
+    .top-left {
+      color: white;
+      border: 1px solid red;
+      border-radius: 0 105px 0 0;
+      padding: 50px;
+      height: max-content;
+      box-shadow: 5px 7px 20px red;
+    }
+  }
+
+  .business-parent {
+    display: grid;
+    gap: 20px;
+    .first-card,
+    .second-card,
+    .third-card,
+    .fourth-card {
+      margin: 30px 0;
+      border: 1px solid #e5e5e5;
+      padding: 15px;
+      transition: 500ms;
+
+      &:hover {
+        box-shadow: 4px 4px 11px 3px #d4d2d2;
+        transition: 500ms;
+      }
+    }
+    .first-card {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      align-items: center;
+      gap: 30px;
+
+      .first-right {
+        div {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+    .second-card {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+      gap: 30px;
+      .second-left {
+        div {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+    .third-card {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      align-items: center;
+      gap: 30px;
+      .third-right {
+        div {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+    .fourth-card {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+      gap: 30px;
+      .fourth-left {
+        div {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+    .process-list {
+      line-height: 2;
+      h1,
+      p {
+        text-align: center;
+      }
+      .list-item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 20px 0;
+      }
+      .single-list {
+        padding: 20px 0;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1025px) {
+  .cover-page {
+    .top-section {
+      .top-parent {
+        padding: 0 50px;
+        .top-left {
+          padding: 30px;
+        }
+      }
+    }
+    .business-parent {
+      padding: 0 50px;
+    }
+  }
+}
+@media only screen and (max-width: 769px) {
+  .cover-page {
+    .top-section {
+      padding: 30px 0;
+
+      .top-parent {
+        height: auto;
+        grid-template-columns: 1fr;
+        width: 70%;
+        .top-left {
+          padding: 15px;
+          h1 {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+    .business-parent {
+      .first-card,
+      .second-card,
+      .third-card,
+      .fourth-card {
+        grid-template-columns: 1fr;
+        margin: 10px 0;
+      }
+      .first-card,
+      .third-card {
+        display: flex;
+        flex-direction: column-reverse;
+        .first-right {
+          width: 100%;
+        }
+        .third-right {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 426px) {
+  .cover-page {
+    .top-section {
+      .top-parent {
+        width: 100%;
+        padding: 0 20px;
+        .top-left {
+          h1 {
+            font-size: 20px !important;
+          }
+          p {
+            padding: 5px 10px 5px 0;
+          }
+        }
+      }
+    }
+    .business-parent {
+      padding: 0 20px;
+      .process-list {
+        line-height: 1.5;
+        h1 {
+          font-size: 20px;
+        }
+        .list-item {
+          gap: 10px;
+        }
+        .single-list {
+          h2 {
+            font-size: 20px;
+          }
+          ul {
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+    .business-parent {
+      gap: 0;
+      .first-card,
+      .second-card,
+      .third-card {
+        gap: 5px !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 321px) {
+  .cover-page {
+    .top-section {
+      .top-parent {
+        .top-left {
+          h1 {
+            font-size: 18px !important;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+    .business-parent .process-list .list-item {
+      grid-template-columns: 1fr;
+    }
+  }
+}
