@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import css from "../styles/marketing.module.scss";
+import AddIcon from "icons/add";
 
 const OnlineMarketing = () => {
   return (
@@ -69,9 +70,90 @@ const OnlineMarketing = () => {
             </p>
           </div>
         </div>
+
+        {/* faq start  */}
+        <div className="faq">
+          <div className="col-md-12">
+            {FAQArray.map((data, index) => (
+              <FAQList key={index} index={index} {...data} />
+            ))}
+          </div>
+        </div>
+        {/* faq end  */}
       </div>
     </div>
   );
 };
-
+const FAQArray = [
+  {
+    question: `What services does Epic Global Agency offer for online marketing?`,
+    answer: ` Epic Global Agency offers a wide range of online marketing services, including SEO, PPC, social media marketing, content marketing, email marketing, web design, and more.`,
+  },
+  {
+    question:
+      "How long does it typically take for online marketing campaigns to start seeing results?",
+    get answer() {
+      return "The timeline for seeing results from an online marketing campaign can vary based on the scope of the project, the industry, and the competition. However, it is typically safe to expect to see results within three to six months.";
+    },
+  },
+  {
+    question:
+      "What kind of budget do I need to start an online marketing campaign?",
+    get answer() {
+      return "The budget for an online marketing campaign can vary depending on the scope of the project and the services you are looking to use. However, most campaigns require a minimum budget of $500.";
+    },
+  },
+  {
+    question:
+      "What types of reports will I receive when working with Epic Global Agency?",
+    get answer() {
+      return "Epic Global Agency provides comprehensive monthly reports that include detailed analytics and insights about the performance of your online marketing campaigns.";
+    },
+  },
+  {
+    question:
+      "Does Epic Global Agency offer any guarantees for online marketing services?",
+    get answer() {
+      return "Epic Global Agency does not provide any guarantees for online marketing services. However, our team of experienced professionals is dedicated to delivering the best possible results for our clients.";
+    },
+  },
+];
+const FAQList = ({ question, answer, index }: any) => {
+  const [isOpen, setOpen] = React.useState(index === 0 || false);
+  const onClickButton = React.useCallback(() => {
+    setOpen(!isOpen);
+  }, [isOpen]);
+  return (
+    <React.Fragment>
+      <ul onClick={onClickButton}>
+        <li className="heading">
+          {" "}
+          <div className="icon">
+            <AddIcon
+              style={{
+                transform: `rotate(${isOpen ? "45deg" : "90deg"})`,
+                transition: "all 150ms ease",
+                fill: "#000000",
+              }}
+            />
+          </div>
+          <h4>{question}</h4>
+        </li>
+        <li
+          className="contanttext"
+          style={{
+            maxHeight: isOpen ? "200px" : "0px",
+            overflow: "hidden",
+            transition: "all 150ms ease",
+            padding: 0,
+            marginTop: "15px",
+            color: "#838383",
+          }}
+        >
+          <p>{answer}</p>
+        </li>
+      </ul>
+    </React.Fragment>
+  );
+};
 export default OnlineMarketing;

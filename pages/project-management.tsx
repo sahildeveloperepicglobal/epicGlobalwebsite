@@ -1,6 +1,7 @@
 import React from "react";
 import css from "../styles/project.module.scss";
 import Image from "next/image";
+import AddIcon from "icons/add";
 
 const ProjectManagement = () => {
   return (
@@ -20,10 +21,90 @@ const ProjectManagement = () => {
       </div>
       <SecondBlock />
       <ThirdBlock />
+      {/* faq start  */}
+      <div className="faq">
+        <div className="col-md-12">
+          {FAQArray.map((data, index) => (
+            <FAQList key={index} index={index} {...data} />
+          ))}
+        </div>
+      </div>
+      {/* faq end  */}
     </div>
   );
 };
+const FAQArray = [
+  {
+    question: `Q: What services does Epic Global offer?`,
+    answer: ` Epic Global offers a variety of project management services, including project planning, project management consulting, project support, project administration, and project control.`,
+  },
+  {
+    question:
+      "Q: What makes Epic Global's project management services stand out?",
+    get answer() {
+      return "Epic Global stands out in the project management industry by offering experienced and knowledgeable project management consultants and the most comprehensive project management tools and techniques. ";
+    },
+  },
+  {
+    question:
+      "Q: What experience does Epic Global have with project management?",
+    get answer() {
+      return "Epic Global has over 10 years of experience in providing project management services to its clients.";
+    },
+  },
+  {
+    question: "Q: How does Epic Global ensure successful project management?",
+    get answer() {
+      return "Epic Global utilizes best practices and its consultants are certified in project management to ensure successful project management. ";
+    },
+  },
+  {
+    question:
+      "Q: What types of project management services does Epic Global offer?",
+    get answer() {
+      return "Epic Global offers services such as project scheduling and budgeting, risk management, requirements gathering, change management, and stakeholder management.";
+    },
+  },
+];
 
+const FAQList = ({ question, answer, index }: any) => {
+  const [isOpen, setOpen] = React.useState(index === 0 || false);
+  const onClickButton = React.useCallback(() => {
+    setOpen(!isOpen);
+  }, [isOpen]);
+  return (
+    <React.Fragment>
+      <ul onClick={onClickButton}>
+        <li className="heading">
+          {" "}
+          <div className="icon">
+            <AddIcon
+              style={{
+                transform: `rotate(${isOpen ? "45deg" : "90deg"})`,
+                transition: "all 150ms ease",
+                fill: "#000000",
+              }}
+            />
+          </div>
+          <h4>{question}</h4>
+        </li>
+        <li
+          className="contanttext"
+          style={{
+            maxHeight: isOpen ? "200px" : "0px",
+            overflow: "hidden",
+            transition: "all 150ms ease",
+            padding: 0,
+            marginTop: "15px",
+            color: "#838383",
+          }}
+        >
+          <p>{answer}</p>
+        </li>
+      </ul>
+    </React.Fragment>
+  );
+};
 export default ProjectManagement;
 export function SecondBlock() {
   return (

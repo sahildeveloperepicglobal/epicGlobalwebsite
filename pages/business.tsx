@@ -1,6 +1,8 @@
 import React from "react";
 import css from "../styles/business.module.scss";
 import Image from "next/image";
+import AddIcon from "icons/add";
+
 const BusinessProcess = () => {
   return (
     <div className={css["cover-page"]}>
@@ -178,9 +180,118 @@ const BusinessProcess = () => {
             </ul>
           </div>
         </div>
+        {/* faq start  */}
+        <div className="faq">
+          <div className="col-md-12">
+            {FAQArray.map((data, index) => (
+              <FAQList key={index} index={index} {...data} />
+            ))}
+          </div>
+        </div>
+        {/* faq end  */}
       </div>
     </div>
   );
 };
+const FAQArray = [
+  {
+    question: `Q: What is business process services?`,
+    answer: ` Business process services (BPS) is a form of business outsourcing that focuses on improving the efficiency and effectiveness of a company’s internal processes. BPS providers offer a range of services that help companies to streamline and automate processes, improve customer service and reduce costs. These services may include process analysis, process design, process implementation, process monitoring and process optimization.`,
+  },
+  {
+    question: "Q: What are the benefits of business process services?",
+    get answer() {
+      return "Business process services help companies to improve efficiency and reduce costs. They can also help to improve customer service and satisfaction by streamlining processes and automating manual tasks. By outsourcing process-related activities, companies can focus on their core business, freeing up resources and increasing productivity.";
+    },
+  },
+  {
+    question: "Q: How does business process services work?",
+    get answer() {
+      return "Business process services involve a range of activities that help companies to improve their internal processes. This may include process analysis, process design, process implementation, process monitoring and process optimization. BPS providers use the latest technology and tools to analyze and optimize processes, helping companies to increase efficiency and reduce costs";
+    },
+  },
+  {
+    question: "Q: What types of business process services are available?",
+    get answer() {
+      return "Business process services can include a range of activities, such as process analysis, process design, process implementation, process monitoring and process optimization. BPS providers offer a variety of services to help companies optimize their internal processes, such as automation, cloud computing, analytics and data mining.";
+    },
+  },
+  {
+    question: "Q: How much do business process services cost?",
+    get answer() {
+      return "The cost of business process services depends on the type of service and the complexity of the process. BPS providers typically charge a fee for their services, which may range from a few hundred to several thousand dollars.";
+    },
+  },
+  {
+    question:
+      "Q: Are there any risks associated with business process services?",
+    get answer() {
+      return "As with any outsourced service, there are risks associated with business process services. These include the risk of data loss, the risk of inadequate process analysis or design, and the risk of inadequate process implementation or monitoring. It is important to carefully evaluate the risks and benefits of any BPS provider before engaging them.";
+    },
+  },
+  {
+    question: "Q: What qualifications do BPS providers need to have?",
+    get answer() {
+      return "Business process services providers should have experience in the field and be knowledgeable about the latest processes and technologies. They should also be certified in relevant areas and have the necessary skills and qualifications to carry out the required tasks effectively and efficiently.";
+    },
+  },
+  {
+    question: "Q: How can I find a reputable BPS provider?",
+    get answer() {
+      return ": It is important to do your research when choosing a BPS provider. You can read customer reviews or ask for recommendations from colleagues or other professionals. It is also a good idea to request a sample of their work to ensure that they are experienced and knowledgeable in the areas you need.";
+    },
+  },
+  {
+    question: "Q: What should I look for in a BPS provider?",
+    get answer() {
+      return "When choosing a BPS provider, it is important to ensure that they have the necessary skills and experience to carry out the required tasks effectively and efficiently. You should also ensure that they can provide the latest processes and technologies and that they are certified in relevant areas.";
+    },
+  },
+  {
+    question:
+      "Q: How long does it take to implement business process services?",
+    get answer() {
+      return "The length of time it takes to implement business process services depends on the complexity of the process and the experience and skills of the provider. Generally, it can take anywhere from a few weeks to several months. It is important to discuss your timeline with the BPS provider before engaging them to ensure that they can meet your expectations.";
+    },
+  },
+];
 
+const FAQList = ({ question, answer, index }: any) => {
+  const [isOpen, setOpen] = React.useState(index === 0 || false);
+  const onClickButton = React.useCallback(() => {
+    setOpen(!isOpen);
+  }, [isOpen]);
+  return (
+    <React.Fragment>
+      <ul onClick={onClickButton}>
+        <li className="heading">
+          {" "}
+          <div className="icon">
+            <AddIcon
+              style={{
+                transform: `rotate(${isOpen ? "45deg" : "90deg"})`,
+                transition: "all 150ms ease",
+                fill: "#000000",
+              }}
+            />
+          </div>
+          <h4>{question}</h4>
+        </li>
+        <li
+          className="contanttext"
+          style={{
+            maxHeight: isOpen ? "200px" : "0px",
+            overflow: "hidden",
+            transition: "all 150ms ease",
+            padding: 0,
+            marginTop: "15px",
+            color: "#838383",
+          }}
+        >
+          <p>{answer}</p>
+        </li>
+      </ul>
+    </React.Fragment>
+  );
+};
 export default BusinessProcess;

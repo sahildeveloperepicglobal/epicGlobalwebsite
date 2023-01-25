@@ -1,6 +1,7 @@
 import React from "react";
 import css from "../styles/design.module.scss";
 import Image from "next/image";
+import AddIcon from "icons/add";
 
 const DesignAndDevelopement = () => {
   return (
@@ -38,11 +39,94 @@ const DesignAndDevelopement = () => {
         <EpicCards />
         <Clients />
         <RowCard />
+
+        {/* faq start  */}
+        <div className="faq">
+          <div className="col-md-12">
+            {FAQArray.map((data, index) => (
+              <FAQList key={index} index={index} {...data} />
+            ))}
+          </div>
+        </div>
+        {/* faq end  */}
       </div>
     </div>
   );
 };
 
+const FAQArray = [
+  {
+    question: `How does Epic Global Agency provide the best services for Design & Development?`,
+    answer: ` Epic Global Agency utilizes a combination of experienced designers, developers, and strategists to provide high-quality designs and development services. Our team works closely with clients to create custom solutions that meet their unique needs and goals. We use industry-leading technologies and methodologies to create modern, responsive websites, applications, and digital products.`,
+  },
+  {
+    question:
+      "What types of Design & Development services does Epic Global Agency offer?",
+    get answer() {
+      return "Epic Global Agency offers a wide range of services related to Design & Development, including web design, front end development, back end development, mobile app development, ecommerce development, and more. We can create custom designs, develop cutting-edge applications, and provide ongoing maintenance and optimization services to ensure that your project is successful.";
+    },
+  },
+  {
+    question:
+      "What kind of technologies and tools does Epic Global Agency use for Design & Development?",
+    get answer() {
+      return "Epic Global Agency uses advanced technologies and tools, such as HTML, CSS, JavaScript, Node, Mongo DB, MySQL and many more, to create custom solutions for our clients. We also utilize industry-leading frameworks, such as Angular, React, Next and Vue, as well as content management systems, such as Drupal, WordPress, and Magento, to ensure the best results for our clients.";
+    },
+  },
+  {
+    question:
+      "What kind of experience does Epic Global Agency have in Design & Development?",
+    get answer() {
+      return "Epic Global Agency has years of experience in the Design & Development industry. Our team has worked with clients from a variety of industries, such as finance, healthcare, entertainment, and retail. We have created successful products and services for companies of all sizes, from small startups to large enterprises.";
+    },
+  },
+  {
+    question:
+      "How much does it cost to work with Epic Global Agency for Design & Development?",
+    get answer() {
+      return "The cost of working with Epic Global Agency for Design & Development varies depending on the scope and complexity of the project. We offer competitive pricing and can provide a detailed quote for your project after understanding your specific requirements.";
+    },
+  },
+];
+
+const FAQList = ({ question, answer, index }: any) => {
+  const [isOpen, setOpen] = React.useState(index === 0 || false);
+  const onClickButton = React.useCallback(() => {
+    setOpen(!isOpen);
+  }, [isOpen]);
+  return (
+    <React.Fragment>
+      <ul onClick={onClickButton}>
+        <li className="heading">
+          {" "}
+          <div className="icon">
+            <AddIcon
+              style={{
+                transform: `rotate(${isOpen ? "45deg" : "90deg"})`,
+                transition: "all 150ms ease",
+                fill: "#000000",
+              }}
+            />
+          </div>
+          <h4>{question}</h4>
+        </li>
+        <li
+          className="contanttext"
+          style={{
+            maxHeight: isOpen ? "200px" : "0px",
+            overflow: "hidden",
+            transition: "all 150ms ease",
+            padding: 0,
+            marginTop: "15px",
+            color: "#838383",
+          }}
+        >
+          <p>{answer}</p>
+        </li>
+      </ul>
+    </React.Fragment>
+  );
+};
 export default DesignAndDevelopement;
 export function EpicCards() {
   return (
