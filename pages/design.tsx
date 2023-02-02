@@ -47,7 +47,7 @@ export default DesignAndDevelopement;
 export function Faq() {
   return (
     <div className={css["Faq-section"]}>
-      <h2>Frequently Asked Questions (FAQ's)</h2>
+      <h2>Frequently Asked Questions (FAQ&apos;s)</h2>
       <h4>Q: What services does Epic Global offer?</h4>
       <p>
         Epic Global offers a variety of project management services, including
@@ -55,7 +55,7 @@ export function Faq() {
         project administration, and project control.
       </p>
       <h4>
-        Q: What makes Epic Global's project management services stand out?
+        Q: What makes Epic Global&apos;s project management services stand out?
       </h4>
       <p>
         Epic Global stands out in the project management industry by offering

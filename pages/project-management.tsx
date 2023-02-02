@@ -21,7 +21,7 @@ const ProjectManagement = () => {
             and the United Kingdom, Epic Global is a full-service firm that
             specializes in project management, program management, change
             management, and organizational development. Our team of experienced
-            professionals provides the industry’s most comprehensive and
+            professionals provides the industry&apos;s most comprehensive and
             effective project management services.
           </p>
         </div>
@@ -52,10 +52,10 @@ const ProjectManagement = () => {
             <h2>How We Works?</h2>
             <p>
               We understand that every project is unique and requires
-              specialized attention. That’s why our project managers are highly
-              flexible and agile, able to quickly address any potential issues
-              and pivot when needed. We also use the latest technologies and
-              tools to ensure our clients have access to the most up-to-date
+              specialized attention. That&apos;s why our project managers are
+              highly flexible and agile, able to quickly address any potential
+              issues and pivot when needed. We also use the latest technologies
+              and tools to ensure our clients have access to the most up-to-date
               information and progress.
             </p>
           </div>
@@ -94,7 +94,7 @@ export default ProjectManagement;
 export function Faq() {
   return (
     <div className={css["Faq-section"]}>
-      <h2>Frequently Asked Questions (FAQ's)</h2>
+      <h2>Frequently Asked Questions (FAQ&apos;s)</h2>
       <h4>Q: What services does Epic Global offer?</h4>
       <p>
         Epic Global offers a variety of project management services, including
@@ -102,7 +102,7 @@ export function Faq() {
         project administration, and project control.
       </p>
       <h4>
-        Q: What makes Epic Global's project management services stand out?
+        Q: What makes Epic Global&apos;s project management services stand out?
       </h4>
       <p>
         Epic Global stands out in the project management industry by offering

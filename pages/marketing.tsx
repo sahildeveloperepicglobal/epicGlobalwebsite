@@ -52,11 +52,12 @@ const OnlineMarketing = () => {
               <h3>A Range of Services for Your Unique Needs</h3>
               <p>
                 We understand that online marketing can be a complex process,
-                and that’s why we offer a range of services to make it simpler.
-                We’ll work with you to create an effective online marketing plan
-                that meets your needs and budget. Whether you’re just starting
-                out or want to enhance your existing campaigns, we’ll help you
-                take your online presence to the next level
+                and that&apos;s why we offer a range of services to make it
+                simpler. We&apos;ll work with you to create an effective online
+                marketing plan that meets your needs and budget. Whether
+                you&apos;re just starting out or want to enhance your existing
+                campaigns, we&apos;ll help you take your online presence to the
+                next level
               </p>
             </div>
           </div>
@@ -66,7 +67,7 @@ const OnlineMarketing = () => {
               Global
             </h2>
             <p>
-              At Epic Global, we’re committed to providing top-notch online
+              At Epic Global, we&apos;re committed to providing top-notch online
               marketing services to help your business succeed. Our goal is to
               help you get the most out of your online marketing efforts and
               maximize your ROI. With our comprehensive services, you can trust
@@ -86,7 +87,7 @@ export default OnlineMarketing;
 export function Faq() {
   return (
     <div className={css["Faq-section"]}>
-      <h2>Frequently Asked Questions (FAQ's)</h2>
+      <h2>Frequently Asked Questions (FAQ&apos;s)</h2>
       <h4>Q: What services does Epic Global offer?</h4>
       <p>
         Epic Global offers a variety of project management services, including
@@ -94,7 +95,7 @@ export function Faq() {
         project administration, and project control.
       </p>
       <h4>
-        Q: What makes Epic Global's project management services stand out?
+        Q: What makes Epic Global&apos;s project management services stand out?
       </h4>
       <p>
         Epic Global stands out in the project management industry by offering

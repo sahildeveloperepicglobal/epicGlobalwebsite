@@ -28,11 +28,11 @@ const BusinessProcess = () => {
           <p>
             At Epic Global, we understand the complexities of business processes
             and the challenges that companies face when trying to manage them.
-            That’s why we offer a comprehensive suite of services that are
-            tailored to meet our clients’ unique needs and objectives. Our team
-            of experienced professionals have the expertise to create custom
-            solutions that are tailored to the specific requirements of each
-            client.
+            That&apos;s why we offer a comprehensive suite of services that are
+            tailored to meet our clients&apos; unique needs and objectives. Our
+            team of experienced professionals have the expertise to create
+            custom solutions that are tailored to the specific requirements of
+            each client.
           </p>
         </div>
         <div className={`${css["second-section"]}`}>
@@ -112,7 +112,7 @@ const BusinessProcess = () => {
                 <li> -Verification processes</li>
                 <li> -Lead generation processes</li>
                 <li> -Mobile entertainment content delivery</li>
-                <li> -Platform Development –IT development</li>
+                <li> -Platform Development (IT development)</li>
                 <li> -The Benefits of Business Process Services</li>
               </ul>
             </div>
@@ -159,7 +159,7 @@ export default BusinessProcess;
 export function Faq() {
   return (
     <div className={css["Faq-section"]}>
-      <h2>Frequently Asked Questions (FAQ's)</h2>
+      <h2>Frequently Asked Questions (FAQ&apos;s)</h2>
       <h4>Q: What services does Epic Global offer?</h4>
       <p>
         Epic Global offers a variety of project management services, including
@@ -167,7 +167,7 @@ export function Faq() {
         project administration, and project control.
       </p>
       <h4>
-        Q: What makes Epic Global's project management services stand out?
+        Q: What makes Epic Global&apos;s project management services stand out?
       </h4>
       <p>
         Epic Global stands out in the project management industry by offering
