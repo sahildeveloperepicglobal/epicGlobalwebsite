@@ -1,6 +1,7 @@
 import CloseIcon from "icons/CloseIcon";
 import MenuIcon from "icons/MenuIcon";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 import css from "../styles/header.module.scss";
@@ -25,14 +26,14 @@ const Header = () => {
         <div className={css["header-left"]}>
           <ul>
             <li>
-              <a href={"/"}>
+              <Link href={"/"} className={css["a"]}>
                 <Image
                   src={"/epic-logo.png"}
                   height={50}
                   width={250}
                   alt="logo"
                 ></Image>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -51,25 +52,25 @@ const Header = () => {
               toggleNavbar ? css["show"] : css["hide"]
             }`}
           >
-            <a href="business">
+            <Link href="business" className={css["a"]}>
               <li>Business Process Services</li>
-            </a>
+            </Link>
 
-            <a href="project-management">
+            <Link href="project-management" className={css["a"]}>
               <li>Project Management</li>
-            </a>
+            </Link>
 
-            <a href="design">
+            <Link href="design" className={css["a"]}>
               <li>Design & Development</li>
-            </a>
+            </Link>
 
-            <a href="marketing">
+            <Link href="marketing" className={css["a"]}>
               <li>Online Marketing</li>
-            </a>
+            </Link>
 
-            <a href="contact-us">
+            <Link href="contact-us" className={css["a"]}>
               <li>Contact Us</li>
-            </a>
+            </Link>
           </ul>
         </div>
       </div>

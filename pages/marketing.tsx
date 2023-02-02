@@ -1,14 +1,20 @@
 import React from "react";
 import Image from "next/image";
 import css from "../styles/marketing.module.scss";
-import AddIcon from "icons/add";
 
 const OnlineMarketing = () => {
   return (
     <div className={`${css["marketing-parent"]}`}>
+      <Image
+        src={"/31958.jpg"}
+        alt={"marketing-image"}
+        width={1500}
+        height={900}
+      ></Image>
       <div className={`${css["complete-section"]} container2 mcenter`}>
         <div className={`${css["top-section"]}`}>
           <h1>Online Marketing </h1>
+
           <p>
             Epic Global is a full-service online marketing agency that provides
             comprehensive services to help your business succeed online. Our
@@ -19,46 +25,46 @@ const OnlineMarketing = () => {
             marketing (SMM), email marketing, content marketing, and more.
           </p>
         </div>
-        <div className={`${css["marketing-cards"]}`}>
-          <div className={css["marketing-card1"]}>
-            <Image
-              src={"/future.jpg"}
-              alt={"marketing-image"}
-              width={500}
-              height={500}
-            ></Image>
-            <p>
-              Epic Global has the expertise and resources to help you create an
-              effective digital marketing strategy that will increase brand
-              visibility, generate leads, and drive sales. We use the latest
-              tools and techniques to ensure your campaigns are successful. Our
-              team of experts will provide you with personalized guidance and
-              support to ensure your online marketing goals are achieved.
-            </p>
+        <Image
+          src={"/digital2.jpg"}
+          alt={"digital marketing"}
+          width={1000}
+          height={500}
+        ></Image>
+        <div className={`${css["marketing-section"]}`}>
+          <h2>
+            &quot; Boost Your Business with Effective Online Marketing
+            Strategies &quot;
+          </h2>
+          <div className={css["marketing-text"]}>
+            <div className={css["marketing-leftText"]}>
+              <h3>Effective Digital Marketing Solutions by Epic Global</h3>
+              <p>
+                Epic Global has the expertise and resources to help you create
+                an effective digital marketing strategy that will increase brand
+                visibility, generate leads, and drive sales. We use the latest
+                tools and techniques to ensure your campaigns are successful.
+                Our team of experts will provide you with personalized guidance
+                and support to ensure your online marketing goals are achieved.
+              </p>
+            </div>
+            <div className={css["marketing-rightText"]}>
+              <h3>A Range of Services for Your Unique Needs</h3>
+              <p>
+                We understand that online marketing can be a complex process,
+                and that’s why we offer a range of services to make it simpler.
+                We’ll work with you to create an effective online marketing plan
+                that meets your needs and budget. Whether you’re just starting
+                out or want to enhance your existing campaigns, we’ll help you
+                take your online presence to the next level
+              </p>
+            </div>
           </div>
-          <div className={css["marketing-card2"]}>
-            <Image
-              src={"/future.jpg"}
-              alt={"marketing-image"}
-              width={500}
-              height={500}
-            ></Image>
-            <p>
-              We understand that online marketing can be a complex process, and
-              that’s why we offer a range of services to make it simpler. We’ll
-              work with you to create an effective online marketing plan that
-              meets your needs and budget. Whether you’re just starting out or
-              want to enhance your existing campaigns, we’ll help you take your
-              online presence to the next level
-            </p>
-          </div>
-          <div className={css["marketing-card3"]}>
-            <Image
-              src={"/future.jpg"}
-              alt={"marketing-image"}
-              width={500}
-              height={500}
-            ></Image>
+          <div className={css["bottom-text"]}>
+            <h2>
+              Maximizing ROI with Top-Notch Online Marketing Services - Epic
+              Global
+            </h2>
             <p>
               At Epic Global, we’re committed to providing top-notch online
               marketing services to help your business succeed. Our goal is to
@@ -70,90 +76,49 @@ const OnlineMarketing = () => {
             </p>
           </div>
         </div>
-
-        {/* faq start  */}
-        <div className="faq">
-          <div className="col-md-12">
-            {FAQArray.map((data, index) => (
-              <FAQList key={index} index={index} {...data} />
-            ))}
-          </div>
-        </div>
-        {/* faq end  */}
+        <Faq />
       </div>
     </div>
   );
 };
-const FAQArray = [
-  {
-    question: `What services does Epic Global Agency offer for online marketing?`,
-    answer: ` Epic Global Agency offers a wide range of online marketing services, including SEO, PPC, social media marketing, content marketing, email marketing, web design, and more.`,
-  },
-  {
-    question:
-      "How long does it typically take for online marketing campaigns to start seeing results?",
-    get answer() {
-      return "The timeline for seeing results from an online marketing campaign can vary based on the scope of the project, the industry, and the competition. However, it is typically safe to expect to see results within three to six months.";
-    },
-  },
-  {
-    question:
-      "What kind of budget do I need to start an online marketing campaign?",
-    get answer() {
-      return "The budget for an online marketing campaign can vary depending on the scope of the project and the services you are looking to use. However, most campaigns require a minimum budget of $500.";
-    },
-  },
-  {
-    question:
-      "What types of reports will I receive when working with Epic Global Agency?",
-    get answer() {
-      return "Epic Global Agency provides comprehensive monthly reports that include detailed analytics and insights about the performance of your online marketing campaigns.";
-    },
-  },
-  {
-    question:
-      "Does Epic Global Agency offer any guarantees for online marketing services?",
-    get answer() {
-      return "Epic Global Agency does not provide any guarantees for online marketing services. However, our team of experienced professionals is dedicated to delivering the best possible results for our clients.";
-    },
-  },
-];
-const FAQList = ({ question, answer, index }: any) => {
-  const [isOpen, setOpen] = React.useState(index === 0 || false);
-  const onClickButton = React.useCallback(() => {
-    setOpen(!isOpen);
-  }, [isOpen]);
-  return (
-    <React.Fragment>
-      <ul onClick={onClickButton}>
-        <li className="heading">
-          {" "}
-          <div className="icon">
-            <AddIcon
-              style={{
-                transform: `rotate(${isOpen ? "45deg" : "90deg"})`,
-                transition: "all 150ms ease",
-                fill: "#000000",
-              }}
-            />
-          </div>
-          <h4>{question}</h4>
-        </li>
-        <li
-          className="contanttext"
-          style={{
-            maxHeight: isOpen ? "200px" : "0px",
-            overflow: "hidden",
-            transition: "all 150ms ease",
-            padding: 0,
-            marginTop: "15px",
-            color: "#838383",
-          }}
-        >
-          <p>{answer}</p>
-        </li>
-      </ul>
-    </React.Fragment>
-  );
-};
+
 export default OnlineMarketing;
+export function Faq() {
+  return (
+    <div className={css["Faq-section"]}>
+      <h2>Frequently Asked Questions (FAQ's)</h2>
+      <h4>Q: What services does Epic Global offer?</h4>
+      <p>
+        Epic Global offers a variety of project management services, including
+        project planning, project management consulting, project support,
+        project administration, and project control.
+      </p>
+      <h4>
+        Q: What makes Epic Global's project management services stand out?
+      </h4>
+      <p>
+        Epic Global stands out in the project management industry by offering
+        experienced and knowledgeable project management consultants and the
+        most comprehensive project management tools and techniques.
+      </p>
+      <h4>Q: What experience does Epic Global have with project management?</h4>
+      <p>
+        Epic Global has over 10 years of experience in providing project
+        management services to its clients.
+      </p>
+      <h4>Q: How does Epic Global ensure successful project management?</h4>
+      <p>
+        Epic Global utilizes best practices and its consultants are certified in
+        project management to ensure successful project management.
+      </p>
+      <h4>
+        Q: What types of project management services does Epic Global offer?
+      </h4>
+      <p>
+        Epic Global offers services such as project scheduling and budgeting,
+        risk management, requirements gathering, change management, and
+        stakeholder management.
+      </p>
+    </div>
+  );
+}

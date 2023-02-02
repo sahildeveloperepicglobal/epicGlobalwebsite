@@ -1,41 +1,69 @@
 .marketing-parent {
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    -o-object-position: -20px;
+  }
   .complete-section {
     padding: 30px 0;
-    line-height: 1.5;
+    line-height: 1.4;
     h1 {
       text-align: center;
       padding: 5px 0;
     }
-    .marketing-cards {
+
+    img {
+      width: 100%;
+      height: auto;
+      margin: 70px 0;
+    }
+    h2 {
+      text-align: center;
+      font-size: 34px;
+    }
+    p {
+      font-size: 24px;
+      font-family: emoji;
+    }
+    .marketing-text {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 30px;
-      padding: 30px 0;
-
-      .marketing-card1,
-      .marketing-card2,
-      .marketing-card3 {
-        border: 1px solid #e5e5e5;
-        padding: 20px;
-        transition: 500ms;
-        border-radius: 5px;
-
-        img {
-          width: 100%;
-          height: auto;
-        }
-        &:hover {
-          box-shadow: 4px 4px 11px 3px #d4d2d2;
-          transition: 500ms;
-        }
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin: 30px 0;
+      p {
+        font-size: 18px;
       }
+    }
+    .bottom-text {
+      margin: 30px 0;
+      font-size: 24px;
+    }
+  }
+  .Faq-section {
+    margin: 30px 0;
+    padding: 20px 0;
+
+    h2 {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+    p {
+      padding-bottom: 10px;
     }
   }
 }
 @media only screen and (max-width: 1251px) {
   .marketing-parent {
     .complete-section {
-      padding: 50px;
+      padding: 20px 50px;
+      img {
+        margin: 25px 0;
+      }
+      .Faq-section {
+        padding: 0;
+        margin: 0;
+      }
     }
   }
 }
@@ -46,6 +74,9 @@
       .marketing-cards {
         padding-bottom: 0;
       }
+      .Faq-section {
+        margin-bottom: -50px;
+      }
     }
   }
 }
@@ -53,8 +84,11 @@
   .marketing-parent {
     .complete-section {
       padding-top: 0;
-      .marketing-cards {
-        grid-template-columns: 1fr 1fr;
+
+      .marketing-section {
+        .marketing-text {
+          margin-top: 10px;
+        }
       }
     }
   }
@@ -62,14 +96,30 @@
 @media only screen and (max-width: 426px) {
   .marketing-parent {
     .complete-section {
-      div {
-        h1 {
-          font-size: 24px;
-        }
+      h1,
+      h2 {
+        font-size: 30px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 22px;
+      }
+      .marketing-text {
+        grid-template-columns: 1fr;
+        gap: 15px;
       }
       padding: 20px 30px;
       .marketing-cards {
         grid-template-columns: 1fr;
+      }
+      .bottom-text {
+        margin: 0;
+        margin-bottom: 10px;
+      }
+      .Faq-section {
+        margin-bottom: 0;
       }
     }
   }
@@ -77,12 +127,43 @@
 @media only screen and (max-width: 376px) {
   .marketing-parent {
     .complete-section {
-      div {
-        h1 {
-          font-size: 20px;
-        }
+      line-height: 1.2;
+      padding: 5px 10px 20px 10px;
+      h1,
+      h2 {
+        font-size: 28px;
       }
-      padding: 5px 20px 20px 20px;
+      h3 {
+        padding-bottom: 5px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 321px) {
+  .complete-section {
+    .top-section {
+      p {
+        font-size: 20px;
+      }
+    }
+    .marketing-section {
+      h2 {
+        font-size: 24px;
+      }
+      h3 {
+        font-size: 18px;
+      }
+    }
+    .Faq-section {
+      line-height: 1.2 !important;
+
+      h2 {
+        font-size: 24px;
+        padding-top: 10px;
+      }
+      h4 {
+        padding-bottom: 5px;
+      }
     }
   }
 }

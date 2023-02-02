@@ -1,5 +1,6 @@
 .cover-page {
   width: 100%;
+  line-height: 1.4;
   .top-section {
     background: url(/future.jpg);
     background-repeat: no-repeat;
@@ -19,83 +20,52 @@
       padding: 50px;
       height: max-content;
       box-shadow: 5px 7px 20px red;
+      h1 {
+        padding-bottom: 5px;
+      }
     }
   }
 
   .business-parent {
     display: grid;
     gap: 20px;
-    .first-card,
-    .second-card,
-    .third-card,
-    .fourth-card {
-      margin: 30px 0;
-      border: 1px solid #e5e5e5;
-      padding: 15px;
-      transition: 500ms;
+    .first-section {
+      margin: 20px 0;
+      h2 {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 38px;
+      }
+      p {
+        font-size: 24px;
+      }
+    }
+    .second-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      h3 {
+        padding-bottom: 10px;
+      }
+    }
+    .business-image {
+      margin: 20px 0;
+      h2 {
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 38px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+      }
+      p {
+        margin: 20px 0 0 0;
+        font-size: 24px;
+      }
+    }
 
-      &:hover {
-        box-shadow: 4px 4px 11px 3px #d4d2d2;
-        transition: 500ms;
-      }
-    }
-    .first-card {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      align-items: center;
-      gap: 30px;
-
-      .first-right {
-        div {
-          img {
-            width: 100%;
-            height: auto;
-          }
-        }
-      }
-    }
-    .second-card {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      align-items: center;
-      gap: 30px;
-      .second-left {
-        div {
-          img {
-            width: 100%;
-            height: auto;
-          }
-        }
-      }
-    }
-    .third-card {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      align-items: center;
-      gap: 30px;
-      .third-right {
-        div {
-          img {
-            width: 100%;
-            height: auto;
-          }
-        }
-      }
-    }
-    .fourth-card {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      align-items: center;
-      gap: 30px;
-      .fourth-left {
-        div {
-          img {
-            width: 100%;
-            height: auto;
-          }
-        }
-      }
-    }
     .process-list {
       line-height: 2;
       h1,
@@ -109,6 +79,15 @@
       }
       .single-list {
         padding: 20px 0;
+        line-height: 1.5;
+      }
+    }
+    .Faq-section {
+      line-height: 1.5;
+      margin: 0 0 30px 0;
+      padding: 20px 0;
+      h2 {
+        text-align: center;
       }
     }
   }
@@ -125,6 +104,10 @@
     }
     .business-parent {
       padding: 0 50px;
+      .Faq-section {
+        padding: 0;
+        margin: 0;
+      }
     }
   }
 }
@@ -146,23 +129,9 @@
       }
     }
     .business-parent {
-      .first-card,
-      .second-card,
-      .third-card,
-      .fourth-card {
-        grid-template-columns: 1fr;
-        margin: 10px 0;
-      }
-      .first-card,
-      .third-card {
-        display: flex;
-        flex-direction: column-reverse;
-        .first-right {
-          width: 100%;
-        }
-        .third-right {
-          width: 100%;
-        }
+      .Faq-section {
+        padding: 0;
+        margin: 0;
       }
     }
   }
@@ -185,6 +154,20 @@
     }
     .business-parent {
       padding: 0 20px;
+      .first-section {
+        h2 {
+          font-size: 28px;
+        }
+      }
+      .second-section {
+        grid-template-columns: 1fr;
+      }
+      .business-image {
+        h2 {
+          padding-bottom: 0;
+          font-size: 28px;
+        }
+      }
       .process-list {
         line-height: 1.5;
         h1 {
@@ -202,19 +185,55 @@
           }
         }
       }
+      .Faq-section {
+        line-height: 1.5;
+        margin-bottom: 20px;
+        h4 {
+          padding: 5px;
+        }
+      }
     }
-    .business-parent {
-      gap: 0;
-      .first-card,
-      .second-card,
-      .third-card {
-        gap: 5px !important;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .business-parent {
+    .first-section {
+      margin-bottom: 0 !important;
+      h2 {
+        padding-bottom: 0 !important;
       }
     }
   }
 }
 @media only screen and (max-width: 321px) {
   .cover-page {
+    .business-parent {
+      .first-section {
+        h2 {
+          font-size: 20px;
+          padding-bottom: 10px !important;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+      .second-section {
+        h3 {
+          font-size: 17px;
+        }
+      }
+      .business-image {
+        img {
+          margin-bottom: 0;
+        }
+        h2 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
     .top-section {
       .top-parent {
         .top-left {
@@ -227,6 +246,15 @@
     }
     .business-parent .process-list .list-item {
       grid-template-columns: 1fr;
+      padding: 0;
+    }
+    .Faq-section {
+      h2 {
+        font-size: 20px;
+      }
+      h4 {
+        font-size: 18px;
+      }
     }
   }
 }

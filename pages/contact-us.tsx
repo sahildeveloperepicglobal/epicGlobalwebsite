@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import css from "../styles/contact.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 type Country = typeof AddressData[0];
 
@@ -64,6 +65,7 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
+      <Signup />
     </div>
   );
 };
@@ -104,3 +106,29 @@ const AddressData = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41289548.80927969!2d-130.11782872211322!3d50.82905111995382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sCanada!5e0!3m2!1sen!2sin!4v1674069056768!5m2!1sen!2sin",
   },
 ];
+export function Signup() {
+  return (
+    <div className={css["form-container"]}>
+      <h2>Submit Your Details</h2>
+      <form>
+        <label htmlFor={"name"}>Name*</label>
+        <input
+          type={"text"}
+          required
+          minLength={2}
+          maxLength={20}
+          id={"name"}
+        ></input>
+        <label htmlFor={"email"}>Email*</label>
+        <input type={"email"} id={"email"} required></input>
+        <label htmlFor={"number"}>Number*</label>
+        <input type={"number"} id={"number"} required></input>
+        <label htmlFor={"message"}>Message</label>
+        <textarea rows={8} id={"message"}></textarea>
+        <div className={css["submit-button"]}>
+          <input type={"submit"}></input>
+        </div>
+      </form>
+    </div>
+  );
+}

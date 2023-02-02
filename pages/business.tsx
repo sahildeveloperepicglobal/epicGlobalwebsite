@@ -1,7 +1,6 @@
 import React from "react";
 import css from "../styles/business.module.scss";
 import Image from "next/image";
-import AddIcon from "icons/add";
 
 const BusinessProcess = () => {
   return (
@@ -24,41 +23,24 @@ const BusinessProcess = () => {
         </div>
       </div>
       <div className={`${css["business-parent"]} container2 mcenter`}>
-        <div className={`${css["first-card"]}`}>
-          <div className={`${css["first-left"]}`}>
-            <p>
-              At Epic Global, we understand the complexities of business
-              processes and the challenges that companies face when trying to
-              manage them. That’s why we offer a comprehensive suite of services
-              that are tailored to meet our clients’ unique needs and
-              objectives. Our team of experienced professionals have the
-              expertise to create custom solutions that are tailored to the
-              specific requirements of each client.
-            </p>
-          </div>
-          <div className={`${css["first-right"]}`}>
-            <div className={`${css["FirstCard-image"]}`}>
-              <Image
-                src={"/support.jpg"}
-                alt={"card-image"}
-                width={1200}
-                height={1200}
-              ></Image>
-            </div>
-          </div>
+        <div className={`${css["first-section"]}`}>
+          <h2>How We Understand Your Needs?</h2>
+          <p>
+            At Epic Global, we understand the complexities of business processes
+            and the challenges that companies face when trying to manage them.
+            That’s why we offer a comprehensive suite of services that are
+            tailored to meet our clients’ unique needs and objectives. Our team
+            of experienced professionals have the expertise to create custom
+            solutions that are tailored to the specific requirements of each
+            client.
+          </p>
         </div>
-        <div className={`${css["second-card"]}`}>
-          <div className={`${css["second-left"]}`}>
-            <div className={`${css["SecondCard-image"]}`}>
-              <Image
-                src={"/support.jpg"}
-                alt={"card-image"}
-                width={1200}
-                height={1200}
-              ></Image>
-            </div>
-          </div>
-          <div className={`${css["second-right"]}`}>
+        <div className={`${css["second-section"]}`}>
+          <div className={css["left-section"]}>
+            <h3>
+              Expert Process Engineering, Automation, and Delivery Assurance
+              Services
+            </h3>
             <p>
               We have extensive experience in process engineering, automation,
               and delivery assurance. Our process engineering services involve
@@ -71,9 +53,10 @@ const BusinessProcess = () => {
               reduce operational costs.
             </p>
           </div>
-        </div>
-        <div className={`${css["third-card"]}`}>
-          <div className={`${css["third-left"]}`}>
+          <div className={css["right-section"]}>
+            <h3>
+              Delivery Assurance with Data-Driven Analytics and Optimization
+            </h3>
             <p>
               For delivery assurance, we use data-driven analytics to monitor
               and measure the performance of business processes. Our analytics
@@ -83,40 +66,27 @@ const BusinessProcess = () => {
               efficiency of their processes.
             </p>
           </div>
-          <div className={`${css["third-right"]}`}>
-            <div className={`${css["ThirdCard-image"]}`}>
-              <Image
-                src={"/support.jpg"}
-                alt={"card-image"}
-                width={1200}
-                height={1200}
-              ></Image>
-            </div>
-          </div>
         </div>
-        <div className={`${css["fourth-card"]}`}>
-          <div className={`${css["fourth-left"]}`}>
-            <div className={`${css["FourthCard-image"]}`}>
-              <Image
-                src={"/support.jpg"}
-                alt={"card-image"}
-                width={1200}
-                height={1200}
-              ></Image>
-            </div>
-          </div>
-          <div className={`${css["fourth-right"]}`}>
-            <p>
-              At Epic Global, we are committed to providing the best services
-              for business process services. We strive to provide our clients
-              with innovative solutions that are tailored to their specific
-              needs. Our team of experienced professionals are dedicated to
-              delivering top-notch solutions that help our clients run more
-              efficiently and maximize their profitability. With our
-              comprehensive suite of services, we can help you create a more
-              efficient and profitable business.
-            </p>
-          </div>
+        <div className={css["business-image"]}>
+          <h2>
+            Business Process Services with Innovative Solutions at Epic Global
+          </h2>
+          <Image
+            src={"/busi.jpg"}
+            alt={"business process management"}
+            width={1000}
+            height={600}
+          ></Image>
+          <p>
+            At Epic Global, we are committed to providing the best services for
+            business process services. We strive to provide our clients with
+            innovative solutions that are tailored to their specific needs. Our
+            team of experienced professionals are dedicated to delivering
+            top-notch solutions that help our clients run more efficiently and
+            maximize their profitability. With our comprehensive suite of
+            services, we can help you create a more efficient and profitable
+            business.
+          </p>
         </div>
         <div className={`${css["process-list"]}`}>
           <h1>Why Business Process Services?</h1>
@@ -180,118 +150,48 @@ const BusinessProcess = () => {
             </ul>
           </div>
         </div>
-        {/* faq start  */}
-        <div className="faq">
-          <div className="col-md-12">
-            {FAQArray.map((data, index) => (
-              <FAQList key={index} index={index} {...data} />
-            ))}
-          </div>
-        </div>
-        {/* faq end  */}
+        <Faq />
       </div>
     </div>
   );
 };
-const FAQArray = [
-  {
-    question: `Q: What is business process services?`,
-    answer: ` Business process services (BPS) is a form of business outsourcing that focuses on improving the efficiency and effectiveness of a company’s internal processes. BPS providers offer a range of services that help companies to streamline and automate processes, improve customer service and reduce costs. These services may include process analysis, process design, process implementation, process monitoring and process optimization.`,
-  },
-  {
-    question: "Q: What are the benefits of business process services?",
-    get answer() {
-      return "Business process services help companies to improve efficiency and reduce costs. They can also help to improve customer service and satisfaction by streamlining processes and automating manual tasks. By outsourcing process-related activities, companies can focus on their core business, freeing up resources and increasing productivity.";
-    },
-  },
-  {
-    question: "Q: How does business process services work?",
-    get answer() {
-      return "Business process services involve a range of activities that help companies to improve their internal processes. This may include process analysis, process design, process implementation, process monitoring and process optimization. BPS providers use the latest technology and tools to analyze and optimize processes, helping companies to increase efficiency and reduce costs";
-    },
-  },
-  {
-    question: "Q: What types of business process services are available?",
-    get answer() {
-      return "Business process services can include a range of activities, such as process analysis, process design, process implementation, process monitoring and process optimization. BPS providers offer a variety of services to help companies optimize their internal processes, such as automation, cloud computing, analytics and data mining.";
-    },
-  },
-  {
-    question: "Q: How much do business process services cost?",
-    get answer() {
-      return "The cost of business process services depends on the type of service and the complexity of the process. BPS providers typically charge a fee for their services, which may range from a few hundred to several thousand dollars.";
-    },
-  },
-  {
-    question:
-      "Q: Are there any risks associated with business process services?",
-    get answer() {
-      return "As with any outsourced service, there are risks associated with business process services. These include the risk of data loss, the risk of inadequate process analysis or design, and the risk of inadequate process implementation or monitoring. It is important to carefully evaluate the risks and benefits of any BPS provider before engaging them.";
-    },
-  },
-  {
-    question: "Q: What qualifications do BPS providers need to have?",
-    get answer() {
-      return "Business process services providers should have experience in the field and be knowledgeable about the latest processes and technologies. They should also be certified in relevant areas and have the necessary skills and qualifications to carry out the required tasks effectively and efficiently.";
-    },
-  },
-  {
-    question: "Q: How can I find a reputable BPS provider?",
-    get answer() {
-      return ": It is important to do your research when choosing a BPS provider. You can read customer reviews or ask for recommendations from colleagues or other professionals. It is also a good idea to request a sample of their work to ensure that they are experienced and knowledgeable in the areas you need.";
-    },
-  },
-  {
-    question: "Q: What should I look for in a BPS provider?",
-    get answer() {
-      return "When choosing a BPS provider, it is important to ensure that they have the necessary skills and experience to carry out the required tasks effectively and efficiently. You should also ensure that they can provide the latest processes and technologies and that they are certified in relevant areas.";
-    },
-  },
-  {
-    question:
-      "Q: How long does it take to implement business process services?",
-    get answer() {
-      return "The length of time it takes to implement business process services depends on the complexity of the process and the experience and skills of the provider. Generally, it can take anywhere from a few weeks to several months. It is important to discuss your timeline with the BPS provider before engaging them to ensure that they can meet your expectations.";
-    },
-  },
-];
-
-const FAQList = ({ question, answer, index }: any) => {
-  const [isOpen, setOpen] = React.useState(index === 0 || false);
-  const onClickButton = React.useCallback(() => {
-    setOpen(!isOpen);
-  }, [isOpen]);
-  return (
-    <React.Fragment>
-      <ul onClick={onClickButton}>
-        <li className="heading">
-          {" "}
-          <div className="icon">
-            <AddIcon
-              style={{
-                transform: `rotate(${isOpen ? "45deg" : "90deg"})`,
-                transition: "all 150ms ease",
-                fill: "#000000",
-              }}
-            />
-          </div>
-          <h4>{question}</h4>
-        </li>
-        <li
-          className="contanttext"
-          style={{
-            maxHeight: isOpen ? "200px" : "0px",
-            overflow: "hidden",
-            transition: "all 150ms ease",
-            padding: 0,
-            marginTop: "15px",
-            color: "#838383",
-          }}
-        >
-          <p>{answer}</p>
-        </li>
-      </ul>
-    </React.Fragment>
-  );
-};
 export default BusinessProcess;
+export function Faq() {
+  return (
+    <div className={css["Faq-section"]}>
+      <h2>Frequently Asked Questions (FAQ's)</h2>
+      <h4>Q: What services does Epic Global offer?</h4>
+      <p>
+        Epic Global offers a variety of project management services, including
+        project planning, project management consulting, project support,
+        project administration, and project control.
+      </p>
+      <h4>
+        Q: What makes Epic Global's project management services stand out?
+      </h4>
+      <p>
+        Epic Global stands out in the project management industry by offering
+        experienced and knowledgeable project management consultants and the
+        most comprehensive project management tools and techniques.
+      </p>
+      <h4>Q: What experience does Epic Global have with project management?</h4>
+      <p>
+        Epic Global has over 10 years of experience in providing project
+        management services to its clients.
+      </p>
+      <h4>Q: How does Epic Global ensure successful project management?</h4>
+      <p>
+        Epic Global utilizes best practices and its consultants are certified in
+        project management to ensure successful project management.
+      </p>
+      <h4>
+        Q: What types of project management services does Epic Global offer?
+      </h4>
+      <p>
+        Epic Global offers services such as project scheduling and budgeting,
+        risk management, requirements gathering, change management, and
+        stakeholder management.
+      </p>
+    </div>
+  );
+}

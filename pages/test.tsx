@@ -16,6 +16,10 @@ function Test() {
           <a>{item.country}</a>
         </li>
       ))}
+
+      <ul>
+        <li></li>
+      </ul>
     </div>
   );
 }
@@ -25,9 +29,9 @@ export default Test;
 const Items = [
   {
     country: "India",
-    name: "",
-    address: "",
-    phone: "",
+    name: "jgvjvb",
+    address: "j hbnu",
+    phone: "449449",
     map: "",
   },
 ];
