@@ -230,10 +230,18 @@
     }
     .below-bannner {
       padding: 0 10px;
+      .needs-section {
+        padding: 10px 0;
+        gap: 10px;
+      }
       .client-section {
+        gap: 0;
         p {
           font-size: 22px;
         }
+      }
+      .Faq-section {
+        line-height: 1.2;
       }
     }
   }

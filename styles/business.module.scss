@@ -197,11 +197,35 @@
 }
 @media only screen and (max-width: 376px) {
   .business-parent {
+    padding: 0 10px !important;
     .first-section {
       margin-bottom: 0 !important;
       h2 {
         padding-bottom: 0 !important;
       }
+    }
+    .second-section {
+      gap: 10px !important;
+      h3 {
+        padding: 0 !important;
+      }
+    }
+    .business-image {
+      margin: 0 !important;
+      img {
+        margin-bottom: 0 !important;
+      }
+    }
+    .process-list {
+      .list-item {
+        padding: 10px 0 0 0 !important;
+      }
+      .single-list {
+        padding-bottom: 0 !important;
+      }
+    }
+    .Faq-section {
+      line-height: 1.2 !important;
     }
   }
 }

@@ -84,7 +84,7 @@ const AddressData = [
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.1337802519674!2d77.37461772557941!3d28.62575232619224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef387aa571c5%3A0x3a20601e5ef21ab7!2sEpic%20Global!5e0!3m2!1sen!2sin!4v1674069002352!5m2!1sen!2sin",
   },
   {
-    country: "United kingdom",
+    country: "United Kingdom",
     address:
       "Unit 8a Stag Industrial Estate Oxford Street Bilston Wolverhampton WV14 7HZ",
     phone: [" +91 2104176500"],

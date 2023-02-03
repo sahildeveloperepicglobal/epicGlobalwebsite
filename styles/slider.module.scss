@@ -93,5 +93,10 @@
 @media only screen and (max-width: 376px) {
   .slide-item {
     top: 10px;
+    .slider-content {
+      p {
+        padding: 10px !important;
+      }
+    }
   }
 }

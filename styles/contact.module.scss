@@ -85,6 +85,10 @@
     grid-template-columns: 1fr !important;
     gap: 10px;
   }
+  .form-container {
+    padding: 0 50px;
+    margin-bottom: -50px;
+  }
 }
 @media only screen and (max-width: 426px) {
   .contact-us {
@@ -104,6 +108,16 @@
       }
     }
   }
+  .form-container {
+    line-height: 2;
+    margin-bottom: 10px !important;
+    h2 {
+      text-align: center;
+    }
+    form {
+      width: 100%;
+    }
+  }
   .address-section {
     padding: 0 20px 20px 20px !important;
     .right-map {
@@ -111,5 +125,12 @@
         height: 30vh !important;
       }
     }
+  }
+}
+@media only screen and (max-width: 376px) {
+  .contact-us {
+  }
+  .form-container {
+    padding: 0 10px;
   }
 }
