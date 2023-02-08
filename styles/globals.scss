@@ -6,13 +6,21 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-size: 20px;
-  font-family: emoji;
+  // font-family: poppins;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  // font-family: emoji;
   color: #333;
 }
 p {
   text-align: justify;
   line-height: 1.5;
+  font-size: 20px;
+}
+h3,
+h4 {
+  font-size: 22px;
 }
 
 a {
@@ -39,7 +47,9 @@ a {
 
 li {
   list-style: none;
+  font-size: 18px;
 }
+
 .splide--draggable {
   padding: 0 !important;
 }

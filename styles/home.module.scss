@@ -23,6 +23,11 @@
     // font-family: consolas;
   }
 }
+.below-discover {
+  span {
+    font-size: 20px;
+  }
+}
 @keyframes animate {
   0% {
     transform: translateY(0px);
@@ -182,6 +187,7 @@
   }
   .join-mission {
     top: -40px !important;
+    padding: 30px;
     .mission-text {
       h2 {
         font-size: 24px;

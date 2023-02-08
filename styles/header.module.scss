@@ -77,8 +77,7 @@
   .Header-parent {
     padding: 10px 40px;
     position: sticky;
-    z-index: 1;
-
+    z-index: 11;
     background: #fff9;
     // position: absolute;
     // width: 100%;
@@ -142,7 +141,7 @@
     background: #ffffffc2;
     width: 100%;
     left: 0;
-    top: 74px;
+    top: 83px;
     transform: scaleY(0);
 
     backdrop-filter: blur(32px);
@@ -154,10 +153,21 @@
     transform: scaleY(1);
   }
 }
+@media only screen and (max-width: 1025px) {
+  .Header-parent {
+    padding-top: 15px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .mobile-view.show {
+    top: 88px;
+  }
+}
+
 @media only screen and (max-width: 426px) {
   .mobile-view.hide,
   .mobile-view.show {
-    top: 54px;
+    top: 53px;
   }
   .Header-parent {
     padding: 0px 5px;
@@ -180,17 +190,5 @@
         }
       }
     }
-  }
-}
-@media only screen and (max-width: 376px) {
-  .mobile-view.hide,
-  .mobile-view.show {
-    top: 54px;
-  }
-}
-@media only screen and (max-width: 321px) {
-  .mobile-view.hide,
-  .mobile-view.show {
-    top: 49px;
   }
 }

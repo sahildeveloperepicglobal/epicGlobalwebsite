@@ -2,11 +2,13 @@ import CloseIcon from "icons/CloseIcon";
 import MenuIcon from "icons/MenuIcon";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 
 import css from "../styles/header.module.scss";
 
 const Header = () => {
+  const router = useRouter();
   const [toggleNavbar, setToggleNavbar] = React.useState(false);
 
   const onToggle = () => {
@@ -20,6 +22,16 @@ const Header = () => {
   };
 
   console.log(toggleNavbar);
+
+  React.useEffect(() => {
+    router.events.on("routeChangeStart", () => setToggleNavbar(false));
+    router.events.on("routeChangeComplete", () => setToggleNavbar(false));
+
+    return () => {
+      router.events.off("routeChangeStart", () => setToggleNavbar(false));
+      router.events.off("routeChangeComplete", () => setToggleNavbar(false));
+    };
+  }, []);
   return (
     <div className={css["Header-parent"]}>
       <div className={css["header"]}>
