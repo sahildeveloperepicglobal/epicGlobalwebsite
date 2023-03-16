@@ -14,7 +14,7 @@ const BusinessProcess = () => {
     https://epicglobal.co.in/  */}
 
         {/* Primary Meta Tags  */}
-        <h1>Business Process Services</h1>
+
         <title>
           Business Process Services| BPO Solutions Company |Epic Global
         </title>

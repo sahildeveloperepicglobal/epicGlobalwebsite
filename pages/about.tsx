@@ -12,7 +12,7 @@ const AboutUs = () => {
         {/* Add the code snippet above to the sites listed to display your badge:
     https://epicglobal.co.in/  */}
         {/* Primary Meta Tags */}
-        <h1>About Us</h1>
+
         <title>About Us|Epic Global</title>
         <meta
           name="title"

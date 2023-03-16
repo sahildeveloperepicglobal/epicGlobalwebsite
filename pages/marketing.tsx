@@ -13,7 +13,7 @@ const OnlineMarketing = () => {
     https://epicglobal.co.in/  */}
 
         {/* Primary Meta Tags  */}
-        <h1>Social Media marketing</h1>
+
         <title>Marketing|Social Media marketing|Epic Global</title>
         <meta
           name="title"

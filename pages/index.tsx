@@ -26,7 +26,7 @@ export default function Home({ BlogData }: Home) {
     https://epicglobal.co.in/  */}
 
         {/* Primary Meta Tags  */}
-        <h1>Software Development</h1>
+
         <title>
           Outsourcing Services|Software Development|IT services|(BPO) Service
         </title>

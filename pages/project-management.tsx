@@ -13,7 +13,7 @@ const ProjectManagement = () => {
     https://epicglobal.co.in/  */}
 
         {/* Primary Meta Tags  */}
-        <h1>Project Management</h1>
+
         <title>
           Project Management|Project Management Services |Epic Global
         </title>

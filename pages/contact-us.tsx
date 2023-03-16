@@ -27,7 +27,7 @@ const ContactUs = () => {
     https://epicglobal.co.in/  */}
 
         {/* Primary Meta Tags  */}
-        <h1>Contact us</h1>
+
         <title>Contact us|Epic Global</title>
         <meta
           name="title"
