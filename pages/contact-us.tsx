@@ -25,6 +25,20 @@ const ContactUs = () => {
 
         {/* Add the code snippet above to the sites listed to display your badge:
     https://epicglobal.co.in/  */}
+
+        {/* Primary Meta Tags  */}
+        <h1>Contact us</h1>
+        <title>Contact us|Epic Global</title>
+        <meta
+          name="title"
+          content="Contact us|Epic Global
+"
+        ></meta>
+        <meta
+          name="description"
+          content="Check out Epic global We offer project management, project support, Design & Development, Online Marketing, and Bpo services. Visit Now
+"
+        ></meta>
       </Head>
       <div className={` ${css["contact-us"]} container2 mcenter`}>
         <div className={`${css["heading"]}`}>
